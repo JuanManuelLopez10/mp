@@ -1,0 +1,113 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+  width: 100%;
+}
+header{
+  background-color: gray;
+  width: 100%;
+}
+nav{
+  display: grid;
+  grid-template-rows: 2fr 30px 40px;
+}
+.logo_header{
+  width: 100%;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav li a{
+  text-decoration: none;
+  color: white;
+}
+.menu_secundario{
+  font-family: 'Mukta', sans-serif;
+  font-size: 0.9rem;
+}
+.menu_primario{
+  font-family: 'Bebas Neue', cursive;
+  background-color: black;
+  align-items: center;
+}
+#index_video_portada{
+  width: 100%;
+}
+.wallpaper{
+  width: 100%;
+}
+.marcas{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding: 10px;
+}
+.logo_marcas{
+  width: 30vw;
+  margin: 0px 10px;
+}
+#ofertas_del_mes{
+  background-color: rgb(71, 71, 71);
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+#ofertas_del_mes__div_titulo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#ofertas_del_mes__div_titulo h2{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.8rem;
+}
+#ofertas_del_mes__div_titulo h2 span{
+  color: rgb(190, 0, 0);
+  text-shadow: 2px 2px 2px black;
+}
+#ofertas_del_mes__div_articulos{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.articulo__ofertas_del_mes{
+  width: 130px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 2px 1px black;
+}
+.articulo__ofertas_del_mes img{
+  width: 80%;
+}
+.articulo__ofertas_del_mes h3{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.2rem;
+}
+.articulo__ofertas_del_mes p{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1rem;
+}
+.articulo__ofertas_del_mes p span{
+  font-size: .8rem;
+  text-decoration: line-through 2px;
+}
+
+
+of
+prox
+finan
+gal 
+redes
+opi
