@@ -53,6 +53,11 @@ nav li a{
 .logo_marcas{
   width: 30vw;
   margin: 0px 10px;
+  filter: grayscale(1);
+  transition: filter 0.5s;
+}
+.logo_marcas:hover{
+  filter: grayscale(0);
 }
 #ofertas_del_mes{
   background-color: rgb(71, 71, 71);
@@ -89,6 +94,11 @@ nav li a{
   padding-bottom: 10px;
   border-radius: 10px;
   box-shadow: 0px 1px 2px 1px black;
+  transition: all 0.5s;
+}
+.articulo__ofertas_del_mes:hover{
+  transform: scale(1.1, 1.1);
+  z-index: 1;
 }
 .articulo__ofertas_del_mes img{
   width: 110px;
@@ -111,8 +121,15 @@ nav li a{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+#redes_index a{
+  transition: all 0.5s;
+}
 #redes_index img{
   height: 100%;
+}
+#redes_index a:hover{
+  transform: scale(1.1, 1.1);
+  z-index: 2;
 }
 #proximamente .wallpaper{
   height: 100%;
@@ -178,6 +195,9 @@ footer p{
   font-family: 'Mukta', sans-serif;
   font-size: .8rem;
   text-align: center;
+}
+footer a{
+  color: white;
 }
 .opciones{
   height: 150px;
