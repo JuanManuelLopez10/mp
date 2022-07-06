@@ -1,0 +1,46 @@
+.footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 4fr 2fr 1fr;
+    grid-template-areas: "soporte mp"
+    "info info"
+    "redes redes"
+    "copyright copyright";
+    ul{
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    &__lista{
+      font-family: 'Bebas Neue', cursive;
+      &__titulo{
+        font-size: 1.3rem;
+      }
+    }
+    &__info{
+      grid-area: info;
+      font-family: 'Mukta', sans-serif;
+      font-size: .9rem;
+    }
+    span{
+      font-weight: 800;
+    }
+    &__redes{
+      grid-area: redes;
+      font-size: 2rem;
+      display: flex;
+      justify-content: space-around;
+    }
+    p{
+      grid-area: copyright;
+      font-family: 'Mukta', sans-serif;
+      font-size: .8rem;
+      text-align: center;
+    }
+  }
+  

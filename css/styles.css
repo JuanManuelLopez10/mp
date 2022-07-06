@@ -1,89 +1,138 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-html{
+
+html {
   width: 100vw;
   overflow-x: hidden;
 }
-header{
+
+header {
   background-color: gray;
   width: 100%;
 }
-nav{
+
+.nav {
   display: grid;
   grid-template-rows: 2fr 30px 40px;
 }
-.logo_header{
-  width: 100%;
-}
-nav ul{
+.nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
-nav li a{
+.nav li a {
   text-decoration: none;
   color: white;
 }
-.menu_secundario{
-  font-family: 'Mukta', sans-serif;
+.nav__menu_secundario {
+  font-family: "Mukta", sans-serif;
   font-size: 0.9rem;
   align-items: center;
 }
-.menu_primario{
-  font-family: 'Bebas Neue', cursive;
+.nav__logo {
+  width: 100%;
+}
+.nav__menu_primario {
+  font-family: "Bebas Neue", cursive;
   background-color: black;
   align-items: center;
 }
-#index_video_portada{
-  width: 100%;
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4fr 4fr 2fr 1fr;
+  grid-template-areas: "soporte mp" "info info" "redes redes" "copyright copyright";
 }
-.wallpaper{
-  width: 100%;
+.footer ul {
+  list-style: none;
 }
-.marcas{
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer__lista {
+  font-family: "Bebas Neue", cursive;
+}
+.footer__lista__titulo {
+  font-size: 1.3rem;
+}
+.footer__info {
+  grid-area: info;
+  font-family: "Mukta", sans-serif;
+  font-size: 0.9rem;
+}
+.footer span {
+  font-weight: 800;
+}
+.footer__redes {
+  grid-area: redes;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.footer p {
+  grid-area: copyright;
+  font-family: "Mukta", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.marcas {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
   padding: 10px;
 }
-.logo_marcas{
+.marcas__logo {
   width: 30vw;
   margin: 0px 10px;
   filter: grayscale(1);
   transition: filter 0.5s;
 }
-.logo_marcas:hover{
+.marcas__logo:hover {
   filter: grayscale(0);
 }
-#ofertas_del_mes{
+
+.index_video_portada {
+  width: 100%;
+}
+.index_video_portada__video {
+  width: 100%;
+}
+
+#ofertas_del_mes {
   background-color: rgb(71, 71, 71);
   display: flex;
   flex-direction: column;
   padding: 10px 0px;
 }
-#ofertas_del_mes__div_titulo{
+#ofertas_del_mes__div_titulo {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-#ofertas_del_mes__div_titulo h2{
-  font-family: 'Bebas Neue', cursive;
+#ofertas_del_mes__div_titulo h2 {
+  font-family: "Bebas Neue", cursive;
   font-size: 2.2rem;
 }
-#ofertas_del_mes__div_titulo h2 span{
-  color: rgb(190, 0, 0);
+#ofertas_del_mes__div_titulo h2 span {
+  color: red;
   text-shadow: 2px 2px 2px black;
 }
-#ofertas_del_mes__div_articulos{
+#ofertas_del_mes__div_articulos {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
 }
-.articulo__ofertas_del_mes{
+#ofertas_del_mes__div_articulos .articulo__ofertas_del_mes {
   width: 130px;
   background-color: white;
   display: flex;
@@ -96,156 +145,95 @@ nav li a{
   box-shadow: 0px 1px 2px 1px black;
   transition: all 0.5s;
 }
-.articulo__ofertas_del_mes:hover{
+#ofertas_del_mes__div_articulos .articulo__ofertas_del_mes:hover {
   transform: scale(1.1, 1.1);
   z-index: 1;
 }
-.articulo__ofertas_del_mes img{
+#ofertas_del_mes__div_articulos .articulo__ofertas_del_mes img {
   width: 110px;
   margin: 10px;
 }
-.articulo__ofertas_del_mes h3{
-  font-family: 'Bebas Neue', cursive;
+#ofertas_del_mes__div_articulos .articulo__ofertas_del_mes h3 {
+  font-family: "Bebas Neue", cursive;
   font-size: 1.2rem;
 }
-.articulo__ofertas_del_mes p{
-  font-family: 'Bebas Neue', cursive;
+#ofertas_del_mes__div_articulos .articulo__ofertas_del_mes p {
+  font-family: "Bebas Neue", cursive;
   font-size: 1rem;
 }
-.articulo__ofertas_del_mes p span{
-  font-size: .8rem;
+#ofertas_del_mes__div_articulos .articulo__ofertas_del_mes p span {
+  font-size: 0.8rem;
   text-decoration: line-through 2px;
 }
-#redes_index{
+
+#redes_index {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50vw 50vw;
   grid-template-rows: 1fr 1fr;
 }
-#redes_index a{
+#redes_index a {
   transition: all 0.5s;
 }
-#redes_index img{
-  height: 100%;
-}
-#redes_index a:hover{
+#redes_index a:hover {
   transform: scale(1.1, 1.1);
   z-index: 2;
 }
-#proximamente .wallpaper{
+#redes_index .wallpaper {
   height: 100%;
+  width: 100%;
+}
+
+#proximamente .wallpaper {
+  width: 100%;
   padding: 0px;
   margin: 0px;
 }
-#galeria{
+
+#galeria {
   background-color: rgb(71, 71, 71);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2px;
-  grid-template-areas: "img1 img1 img2 img3"
-  "img1 img1 img4 img5";
+  grid-template-areas: "img1 img1 img2 img3" "img1 img1 img4 img5";
 }
-#galeria img{
+#galeria img {
   width: 100%;
 }
-.img1{
-  grid-area: img1; 
+#galeria .img1 {
+  grid-area: img1;
 }
-footer{
-  background-color: black;
-  color: white;
-  padding: 5px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4fr 4fr 2fr 1fr;
-  grid-template-areas: "soporte mp"
-  "info info"
-  "redes redes"
-  "copyright copyright";
-}
-footer ul{
-  list-style: none;
-}
-.lista_footer{
-  font-family: 'Bebas Neue', cursive;
-}
-.titulo_lista__footer{
-  font-size: 1.3rem;
-}
-footer a{
-  text-decoration: none;
-  color: white;
-}
-#info_footer{
-  grid-area: info;
-  font-family: 'Mukta', sans-serif;
-  font-size: .9rem;
-}
-footer span{
-  font-weight: 800;
-}
-.redes_footer{
-  grid-area: redes;
-  font-size: 2rem;
+
+.categorias_opciones {
+  background-color: rgb(71, 71, 71);
   display: flex;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
 }
-footer p{
-  grid-area: copyright;
-  font-family: 'Mukta', sans-serif;
-  font-size: .8rem;
-  text-align: center;
+.categorias_opciones__img {
+  width: 30vw;
+  margin: 10px;
+  border-radius: 10px;
 }
-footer a{
-  color: white;
+
+.productos {
+  background-color: rgb(71, 71, 71);
 }
-.opciones{
-  height: 150px;
-}
-.opciones_listas{
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  justify-items: center;
-  align-items: center;
-}
-.opciones_foto{
-  visibility: hidden;
-}
-.opciones ul{
-  font-family: 'Bebas Neue', cursive;
-  list-style: none;
-  padding: 10px 0px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.opciones li a{
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-}
-#productos{
-  background-color: rgb(43, 43, 43);
-}
-#productos h3{
-  font-family: 'Bebas Neue', cursive;
+.productos h3 {
+  font-family: "Bebas Neue", cursive;
   font-size: 1.8rem;
   margin-left: 10px;
   color: white;
   font-weight: 200;
 }
-.categoria{
+.productos__categoria {
   display: flex;
   overflow-x: scroll;
   justify-content: flex-start;
   flex-wrap: nowrap;
   width: 100%;
 }
-.producto_div{
+.productos__div {
   padding: 5px;
   margin: 10px;
   width: 150px;
@@ -256,53 +244,55 @@ footer a{
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  box-shadow: 0px 5px 7px rgb(0, 0, 0);
-  font-family: 'Bebas Neue', cursive;
+  box-shadow: 0px 5px 7px black;
+  font-family: "Bebas Neue", cursive;
   transition: all 0.5s;
 }
-.producto_div img{
+.productos__div img {
   width: 120px;
 }
-.producto_div h4{
+.productos__div h4 {
   font-size: 1.3rem;
 }
-.producto_div h5{
+.productos__div h5 {
   font-size: 1.1rem;
 }
-.producto_div:hover{
+.productos__div:hover {
   transform: scale(1.1, 1.1);
   z-index: 2;
 }
-#contacto_sect h1{
-  font-family: 'Bebas Neue', cursive;
-  font-size: 1.7rem;
-}
-#contacto_sect{
+
+#contacto_sect {
   padding-top: 20px;
-  background-color: rgb(49, 49, 49);
+  background-color: rgb(71, 71, 71);
   display: grid;
   grid-template-columns: 10% 80% 10%;
   justify-content: center;
 }
-.formulario{
+#contacto_sect h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.7rem;
+}
+#contacto_sect .formulario {
   background-color: white;
   width: 100%;
   padding: 5px;
-  grid-area: 1 / 2 / 2 / 3;
+  grid-area: 1/2/2/3;
 }
-#contacto_sect label{
+#contacto_sect .formulario label {
   display: block;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 1.3rem;
 }
-.boton{
+#contacto_sect .formulario .boton {
   display: block;
   margin: 2px;
 }
-.otros_contactos{
+
+.otros_contactos {
   visibility: hidden;
   height: 100%;
-  grid-area: 1 / 3 / 2 / 4;
+  grid-area: 1/3/2/4;
   background-color: white;
   display: grid;
   justify-content: center;
@@ -310,23 +300,20 @@ footer a{
   grid-template-rows: 5% 20% 25% 40% 10%;
   grid-template-areas: "vacio" "redes" "llamanos" "ubicacion";
 }
-.redes{
+.otros_contactos__redes {
   grid-area: redes;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   border-radius: 10px;
   box-shadow: 0px 2px 5px 0px black;
   width: 60%;
   text-align: center;
 }
-.otros_contactos_subtitulo{
-  font-size: 1.2rem;
-}
-.redes i{
+.otros_contactos__redes i {
   color: rgb(146, 0, 0);
   font-size: 1.5rem;
   margin: 5px;
 }
-.llamanos{
+.otros_contactos__llamanos {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -336,233 +323,217 @@ footer a{
   border-radius: 10px;
   box-shadow: 0px 2px 5px 0px black;
   grid-area: llamanos;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   text-align: end;
   justify-self: end;
   margin-right: 5px;
 }
-.llamanos h2{
+.otros_contactos__llamanos h2 {
   font-size: 1.2rem;
+  font-family: "Bebas Neue", cursive;
 }
-.llamanos p{
+.otros_contactos__llamanos p {
   font-size: 1.3rem;
 }
-.ubicacion{
+.otros_contactos__subtitulo {
+  font-size: 1.2rem;
+  font-family: "Bebas Neue", cursive;
+}
+.otros_contactos__ubicacion {
   border-radius: 10px;
   width: 90%;
   box-shadow: 0px 2px 5px 0px black;
   grid-area: ubicacion;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   padding-left: 5px;
 }
-.ubicacion iframe{
+.otros_contactos__ubicacion iframe {
   width: 95%;
   height: 80%;
 }
+
 @media screen and (min-width: 480px) {
-  nav{
+  .nav {
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 60px 40px;
-    grid-template-areas: "logo menu_secundario"
-    "menu_primario menu_primario";
+    grid-template-areas: "logo menu_secundario" "menu_primario menu_primario";
   }
-  #contacto_sect{
+  .nav__logo {
+    grid-area: logo;
+  }
+  .nav__menu_secundario {
+    grid-area: menu_secundario;
+  }
+  .nav__menu_primario {
+    grid-area: menu_primario;
+  }
+  #contacto_sect {
     padding-top: 20px;
     background-color: rgb(49, 49, 49);
     display: grid;
     grid-template-columns: 10% 45% 35% 10%;
     justify-content: center;
   }
-  .otros_contactos{
+  .otros_contactos {
     visibility: visible;
   }
-  .logo_header{
-    grid-area: logo;
-  }
-  .menu_secundario{
-    grid-area: menu_secundario;
-  }
-  .menu_primario{
-    grid-area: menu_primario;
-  }
-  footer{
+  .footer {
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: 2fr 1fr 1fr;
   }
-  #soporte_footer{
-    grid-area: 1 / 1 / 2 / 2;
-    font-size: .9rem;
+  .footer__soporte {
+    grid-area: 1/1/2/2;
+    font-size: 0.9rem;
   }
-  #mp_footer{
-    grid-area: 1 / 2 / 2 / 3;
-    font-size: .9rem;
+  .footer__mp {
+    grid-area: 1/2/2/3;
+    font-size: 0.9rem;
   }
-  #mp_footer li{
+  .footer li {
     padding-top: 2px;
   }
-  #info_footer{
-    grid-area: 1 / 3 / 2 / 5;
+  .footer__info {
+    grid-area: 1/3/2/5;
   }
-  .redes_footer{
-    grid-area: 2 / 1 / 3 / 5;
+  .footer__redes {
+    grid-area: 2/1/3/5;
     padding-top: 5px;
   }
-  footer p{
-    grid-area: 3 / 1 / 4 / 5;
+  .footer p {
+    grid-area: 3/1/4/5;
   }
 }
 @media screen and (min-width: 600px) {
-  .logo_header{
+  .nav__logo {
     height: 100%;
     width: auto;
   }
-  .menu_secundario{
+  .nav__menu_secundario {
     font-size: 1.1rem;
   }
-  .menu_primario{
+  .nav__menu_primario {
     font-size: 1.3rem;
   }
-  .logo_marcas{
+  .marcas__logo {
     width: 20vw;
   }
-  #ofertas_del_mes{
+  #ofertas_del_mes {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  #ofertas_del_mes__div_titulo{
+  #ofertas_del_mes__div_titulo {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #ofertas_del_mes__div_titulo h2{
+  #ofertas_del_mes h2 {
     font-size: 3rem;
     text-align: center;
   }
-  #redes_index{
+  #redes_index {
     display: flex;
   }
-      #productos h3{
-        font-size: 2.6rem;
-    }
-    .producto_div{
-        padding: 5px;
-        margin: 10px;
-        width: 200px;
-        border-radius: 20px;
-        background-color: white;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        box-shadow: 0px 5px 7px rgb(0, 0, 0);
-        font-family: 'Bebas Neue', cursive;
-    }
-    .producto_div img{
-        width: 170px;
-    }
-    .producto_div h4{
-        font-size: 1.7rem;
-    }
-    .producto_div h5{
-        font-size: 1.3rem;
-    }  
-    .llamanos h2{
-      font-size: 1.5rem;
-    }
-    .ubicacion h2{
-      font-size: 1.5rem;
-    }
+  .productos h3 {
+    font-size: 2.6rem;
+  }
+  .productos__div {
+    padding: 5px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 5px 7px rgb(0, 0, 0);
+    font-family: "Bebas Neue", cursive;
+  }
+  .productos__div img {
+    width: 170px;
+  }
+  .productos__div h4 {
+    font-size: 1.7rem;
+  }
+  .productos__div h5 {
+    font-size: 1.3rem;
+  }
+  .otros_contactos__llamanos h2 {
+    font-size: 1.5rem;
+  }
+  .otros_contactos__ubicacion h2 {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 768px) {
-  nav{
+  .nav {
     grid-template-columns: 1fr 1fr;
   }
-  footer{
+  .footer {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 3fr 1fr;
   }
-  #soporte_footer{
+  .footer__soporte {
     font-size: 1.2rem;
   }
-  #mp_footer{
+  .footer__mp {
     font-size: 1.2rem;
   }
-  .titulo_lista__footer{
+  .footer__lista__titulo {
     font-size: 1.5rem;
   }
-  #info_footer{
-    grid-area: 1 / 3 / 2 / 5;
+  .footer__info {
+    grid-area: 1/3/2/5;
     font-size: 1.1rem;
   }
-  .redes_footer{
-    grid-area: 1 / 5 / 2 / 6;
+  .footer__redes {
+    grid-area: 1/5/2/6;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-      .opciones{
-        width: 100%;
-        height: 380px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "listas foto";
-        justify-content: space-around;
-        align-items: center;
-    }
-    .opciones_foto{
-        visibility: visible;
-        grid-area: foto;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .foto_opciones{
-        width: 70%;
-        height: 20%;
-    }
-    .opciones li a{
-        font-size: 1.8rem;
-    }
-    .redes h2{
-      font-size: 1.8rem;
+  .otros_contactos__redes h2 {
+    font-size: 1.8rem;
   }
-  .llamanos h2{
-      font-size: 1.8rem;
+  .otros_contactos__llamanos h2 {
+    font-size: 1.8rem;
   }
 }
-@media screen and (min-width: 1024px)  {
-  nav{
+@media screen and (min-width: 1024px) {
+  .nav {
     grid-template-rows: 80px 50px;
   }
-  .menu_secundario{
+  .nav__menu_secundario {
     font-size: 1.3rem;
   }
-  .menu_primario{
+  .nav__menu_primario {
     font-size: 1.7rem;
   }
-  .marcas{
+  .marcas {
     flex-wrap: wrap;
     justify-content: center;
     overflow-x: hidden;
   }
-  .logo_marcas{
+  .marcas__logo {
     width: 18vw;
   }
-  #ofertas_del_mes{
+  #ofertas_del_mes {
     grid-template-columns: 2fr 3fr;
   }
-  #ofertas_del_mes__div_articulos{
+  #ofertas_del_mes__div_articulos {
     overflow-x: hidden;
   }
-  .articulo__ofertas_del_mes{
+  .articulo__ofertas_del_mes {
     width: 13vw;
   }
-  .articulo__ofertas_del_mes img{
+  .articulo__ofertas_del_mes img {
     width: 12vw;
   }
-  .categoria{
+  .productos__categoria {
     overflow-x: hidden;
     flex-wrap: wrap;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */

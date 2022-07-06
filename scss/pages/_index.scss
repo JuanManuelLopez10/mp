@@ -1,0 +1,102 @@
+@import "../utilidades/variables";
+
+.index_video_portada{
+    width: 100%;
+    &__video{
+      width: 100%;
+    }
+  }
+  
+  #ofertas_del_mes{
+    background-color: $color-fondo;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    &__div_titulo{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      h2{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2.2rem;
+        span{
+          color: $color-secundario;
+          text-shadow: 2px 2px 2px black;
+        }
+      }
+    }
+    &__div_articulos{
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      .articulo__ofertas_del_mes{
+        width: 130px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 2px 1px black;
+        transition: all 0.5s;
+        &:hover{
+          transform: scale(1.1, 1.1);
+          z-index: 1;
+        }
+        img{
+          width: 110px;
+          margin: 10px;
+        }
+        h3{
+          font-family: 'Bebas Neue', cursive;
+          font-size: 1.2rem;
+        }
+        p{
+          font-family: 'Bebas Neue', cursive;
+          font-size: 1rem;
+          span{
+            font-size: .8rem;
+            text-decoration: line-through 2px;
+          }
+        }
+      }
+    }
+  }
+  #redes_index{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 1fr 1fr;
+    a{
+      transition: all 0.5s;
+      &:hover{
+        transform: scale(1.1, 1.1);
+        z-index: 2;
+      }
+    }
+    .wallpaper{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  #proximamente .wallpaper{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  #galeria{
+    background-color: $color-fondo;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2px;
+    grid-template-areas: "img1 img1 img2 img3"
+    "img1 img1 img4 img5";
+    img{
+      width: 100%;
+    }
+    .img1{
+      grid-area: img1; 
+    }
+  }
