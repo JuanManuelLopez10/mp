@@ -1,5 +1,7 @@
+@import "../utilidades/variables";
+
 header{
-    background-color: gray;
+    background-color: $color-gris;
     width: 100%;
   }
   .nav{
@@ -12,10 +14,10 @@ header{
     }
     li a{
       text-decoration: none;
-      color: white;
+      color: $color-blanco;
     }
     &__menu_secundario{
-      font-family: 'Mukta', sans-serif;
+      font-family: $letra-secundaria;
       font-size: 0.9rem;
       align-items: center;
     }
@@ -23,9 +25,55 @@ header{
       width: 100%;
     }
     &__menu_primario{
-      font-family: 'Bebas Neue', cursive;
-      background-color: black;
+      font-family: $letra-principal;
+      background-color: $color-negro;
       align-items: center;
     }
   }
-  
+  @media screen and (min-width: 480px) {
+    .nav{
+      grid-template-columns: 3fr 2fr;
+      grid-template-rows: 60px 40px;
+      grid-template-areas: "logo menu_secundario"
+      "menu_primario menu_primario";
+      &__logo{
+        grid-area: logo;
+      }
+      &__menu_secundario{
+          grid-area: menu_secundario;
+        }
+      &__menu_primario{
+        grid-area: menu_primario;
+      }
+    }  
+  }
+@media screen and (min-width: 600px) {
+  .nav{
+      &__logo{
+          height: 100%;
+          width: auto;
+        }
+      &__menu_secundario{
+          font-size: 1.1rem;
+        }
+      &__menu_primario{
+          font-size: 1.3rem;
+        }
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px)  {
+  .nav{
+    grid-template-rows: 80px 50px;
+    &__menu_secundario{
+        font-size: 1.3rem;
+      }
+    &__menu_primario{
+        font-size: 1.7rem;
+      }
+  }
+}

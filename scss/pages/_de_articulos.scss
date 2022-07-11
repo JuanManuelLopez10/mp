@@ -1,4 +1,5 @@
 @import "../utilidades/variables";
+@import "../componentes/tarjeta_producto";
 
 .categorias_opciones{
     background-color: $color-fondo;
@@ -14,10 +15,10 @@
   .productos{
     background-color: $color-fondo;
     h3{
-      font-family: 'Bebas Neue', cursive;
+      font-family: $letra-principal;
       font-size: 1.8rem;
       margin-left: 10px;
-      color: white;
+      color: $color-blanco;
       font-weight: 200;
     }
     &__categoria{
@@ -27,33 +28,52 @@
       flex-wrap: nowrap;
       width: 100%;
     }
-    &__div{
-      padding: 5px;
-      margin: 10px;
-      width: 150px;
-      border-radius: 20px;
-      background-color: white;
-      display: flex;
-      flex-flow: column;
-      justify-content: space-between;
-      align-items: center;
-      text-align: center;
-      box-shadow: 0px 5px 7px black;
-      font-family: 'Bebas Neue', cursive;
-      transition: all 0.5s;
-      img{
-        width: 120px;
+  }
+  @media screen and (min-width: 600px) {
+    .productos{
+      h3{
+        font-size: 2.6rem;
       }
-      h4{
-        font-size: 1.3rem;
-      }
-      h5{
-        font-size: 1.1rem;
-      }
-      &:hover{
-        transform: scale(1.1, 1.1);
-        z-index: 2;
+      &__div{
+        padding: 5px;
+        margin: 10px;
+          width: 200px;
+          border-radius: 20px;
+          background-color: $color-blanco;
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          box-shadow: 0px 5px 7px $color-negro;
+          font-family: $letra-principal;
+          img{
+            width: 170px;
+          }
+          h4{
+            font-size: 1.7rem;
+          }
+          h5{
+            font-size: 1.3rem;
+          }  
+        }
       }
     }
-  }
-  
+    @media screen and (min-width: 1024px)  {
+      .categorias_opciones{
+        overflow-x: hidden;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__img{
+          width: 20vw;
+          transition: all 0.5s;
+          &:hover{
+            transform: scale(1.1, 1.1);
+          }
+        }
+      }
+      .productos__categoria{
+        overflow-x: hidden;
+        flex-wrap: wrap;
+      }
+    }

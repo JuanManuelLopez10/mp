@@ -16,4 +16,18 @@
       }
     }
   }
-  
+@media screen and (min-width: 600px) {
+  .marcas__logo{
+    width: 20vw;
+  }
+}
+@media screen and (min-width: 1024px)  {
+  .marcas{
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
+    &__logo{
+      width: 15vw;
+    }
+  }
+}
