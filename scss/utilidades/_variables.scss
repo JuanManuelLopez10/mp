@@ -6,3 +6,15 @@ $color-gris: grey;
 
 $letra-principal: "Bebas Neue", cursive;
 $letra-secundaria: "Mukta", sans-serif;
+
+$colores: (
+    ngr: black,
+    blc: white,
+    rj: red,
+);
+
+@each $var1, $var2 in $colores {
+    .col--#($var1){
+        color: $var2;
+    }
+}
