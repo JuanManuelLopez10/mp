@@ -33,6 +33,7 @@
         </nav>
     </header>
     <main>
+        <h1 class="titulo_de_pagina">Motos</h1>
         <section class="marcas">
             <img class="marcas__logo" src="../assets/img/logos/cf_moto_logo.jpg" alt="cf_moto">
             <img class="marcas__logo" src="../assets/img/logos/honda_logo.png" alt="honda">
@@ -41,183 +42,223 @@
             <img class="marcas__logo" src="../assets/img/logos/suzuki.png" alt="suzuki">
         </section>
         <section class="categorias_opciones">
-            <a href="#cubs"><img class="categorias_opciones__img" src="../assets/img/caract/cubs.jpg" alt="cubs"></a>
-            <a href="#scooters"><img class="categorias_opciones__img" src="../assets/img/caract/scooters.jpg" alt="scooters"></a>
-            <a href="#naked"><img class="categorias_opciones__img" src="../assets/img/caract/naked.jpg" alt="naked"></a>
-            <a href="#custom"><img class="categorias_opciones__img" src="../assets/img/caract/custom.jpg" alt="custom"></a>
-            <a href="#sport"><img class="categorias_opciones__img" src="../assets/img/caract/sport.jpg" alt="sport"></a>
-            <a href="#enduro"><img class="categorias_opciones__img" src="../assets/img/caract/enduro.jpg" alt="enduro"></a>
-            <a href="#multiproposito"><img class="categorias_opciones__img" src="../assets/img/caract/multiproposito.jpg" alt="multiproposito"></a>
-            <a href="#atv"><img class="categorias_opciones__img" src="../assets/img/caract/atv.jpg" alt="atv/utv"></a>
+            <a href="#cubs">
+                <picture>
+                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/cubs-large.jpg">
+                    <img  class="categorias_opciones__img" src="../assets/img/caract/cubs-small.jpg" alt="cubs">
+                </picture>
+            </a>
+            <a href="#scooters">
+                <picture>
+                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/scooters-large.jpg">
+                    <img  class="categorias_opciones__img" src="../assets/img/caract/scooters-small.jpg" alt="scooters">
+                </picture>
+            </a>
+            <a href="#naked">
+                <picture>
+                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/naked-large.jpg">
+                    <img  class="categorias_opciones__img" src="../assets/img/caract/naked-small.jpg" alt="camperas">
+                </picture>
+            </a>
+            <a href="#custom">
+                <picture>
+                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/custom-large.jpg">
+                    <img  class="categorias_opciones__img" src="../assets/img/caract/custom-small.jpg" alt="pantalones">
+                </picture>
+            </a>
+            <a href="#sport">
+                <picture>
+                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/sport-large.jpg">
+                    <img  class="categorias_opciones__img" src="../assets/img/caract/sport-small.jpg" alt="sport">
+                </picture>
+            </a>
+            <a href="#enduro">
+                <picture>
+                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/enduro-large.jpg">
+                    <img  class="categorias_opciones__img" src="../assets/img/caract/enduro-small.jpg" alt="enduro">
+                </picture>
+            </a>
+            <a href="#multiproposito">
+                <picture>
+                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/multiproposito-large.jpg">
+                    <img  class="categorias_opciones__img" src="../assets/img/caract/multiproposito-small.jpg" alt="multiproposito">
+                </picture>
+            </a>
+            <a href="#atv">
+                <picture>
+                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/atv-large.jpg">
+                    <img  class="categorias_opciones__img" src="../assets/img/caract/atv-small.jpg" alt="atv">
+                </picture>
+            </a>
         </section>
         <section class="productos">
-            <h3 id="cubs">Cubs</h3>
+            <h2 id="cubs">Cubs</h2>
             <div class="productos__categoria">
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/cubs/honda_wave_110_gris.png" alt="honda_wave_110_gris">
                     <h4>Honda Wave 110</h4>
                     <h5>U$S 2490</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/cubs/vital_twist_125_roja.png" alt="vital_twist_125_roja">
                     <h4>Vital Twist 125</h4>
                     <h5>U$S 1250</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/cubs/vital_twist_110_negra.png" alt="vital_twist_110_negra">
                     <h4>Vital Twist 110</h4>
                     <h5>U$S 1290</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/cubs/vital_fair_125_blanca.png" alt="vital_fair_125_blanca">
                     <h4>Vital Fair 125</h4>
                     <h5>U$S 1390</h5>
                 </div>
             </div>
-            <h3 id="scooters">Scooters</h3>
+            <h2 id="scooters">Scooters</h2>
             <div class="productos__categoria">
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/scooters/pcx_150_gris_claro.png" alt="pcx_150_gris_claro">
                     <h4>Honda PCX 150</h4>
                     <h5>U$S 5990</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/scooters/sym_crox_150_azul.png" alt="sym_crox_150_azul">
                     <h4>SYM Crox 150</h4>
                     <h5>U$S 3490</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/scooters/sym_symphony_200_st.png" alt="sym_symphony_200_st">
                     <h4>SYM Symphony 200 ST</h4>
                     <h5>U$S 6490</h5>
                 </div>
             </div>
-            <h3 id="naked">Naked</h3>
+            <h2 id="naked">Naked</h2>
             <div class="productos__categoria">
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/naked/cf_moto_nk_400_blanca.png" alt="moto">
                     <h4>Cf Moto NK400</h4>
                     <h5>U$S 7990</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/naked/honda_twister_125_negra.png" alt="honda_twister_125_negra">
                     <h4>Honda Twister 125</h4>
                     <h5>U$S 2490</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/naked/cf_moto_nk_250_negra.png" alt="cf_moto_nk_250_negra">
                     <h4>Cf Moto NK250</h4>
                     <h5>U$S 5490</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/naked/vital_jet_125.png" alt="vital_jet_125">
                     <h4>Vital Jet 125</h4>
                     <h5>U$S 1490</h5>
                 </div>
             </div>
-            <h3 id="custom">Custom</h3>
+            <h2 id="custom">Custom</h2>
             <div class="productos__categoria">
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/custom/honda_cb1_roja.png" alt="honda_cb1_roja">
                     <h4>Honda CB1</h4>
                     <h5>U$S 2490</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/custom/lifan_tempo_125.png" alt="lifan_tempo_125">
                     <h4>Lifan Tempo 125</h4>
                     <h5>U$S 1490</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/custom/lifan_street_125.png" alt="lifan_street_125">
                     <h4>Lifan Street 125</h4>
                     <h5>U$S 1790</h5>
                 </div>
             </div>
-            <h3 id="sport">Sport</h3>
+            <h2 id="sport">Sport</h2>
             <div class="productos__categoria">
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/sport/honda_cbr_650_r.png" alt="honda_cbr_650_r">
                     <h4>Honda CBR 650 R</h4>
                     <h5>U$S 7990</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/sport/cf_moto_sr_300_negra.png" alt="cf_moto_sr_300_negra">
                     <h4>Cf Moto SR300</h4>
                     <h5>U$S 6490</h5>
                 </div>
             </div>
-            <h3 id="enduro">Enduro</h3>
+            <h2 id="enduro">Enduro</h2>
             <div class="productos__categoria">
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/enduro/honda_xr_125.png" alt="honda_xr_125">
                     <h4>Honda XR 125 L</h4>
                     <h5>U$S 3490</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/enduro/honda_xr_190.png" alt="honda_xr_190">
                     <h4>Honda XR 190 L</h4>
                     <h5>U$S 4490</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/enduro/honda_xre_190.png" alt="honda_xre_190">
                     <h4>Honda XRE 190</h4>
                     <h5>U$S 5490</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/enduro/honda_xre_300.png" alt="honda_xre_300">
                     <h4>Honda XRE 300</h4>
                     <h5>U$S 8590</h5>
                 </div>
             </div>
-            <h3 id="multiproposito">Multipropósito</h3>
+            <h2 id="multiproposito">Multipropósito</h2>
             <div class="productos__categoria">
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/multiproposito/cf_moto_mt650_celeste.png" alt="cf_moto_mt650_celeste">
                     <h4>Cf Moto MT650</h4>
                     <h5>U$S 10990</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/multiproposito/cf_moto_mt_800_sport.png" alt="cf_moto_mt_800_sport">
                     <h4>Cf Moto MT800 Sport</h4>
                     <h5>U$S 17990</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/multiproposito/honda_cb_500_X_negra.png" alt="honda_cb_500_X_negra">
                     <h4>Honda CB 500 X</h4>
                     <h5>U$S 13990</h5>
                 </div>
             </div>
-            <h3 id="atv">ATV / UTV</h3>
+            <h2 id="atv">ATV / UTV</h2>
             <div class="productos__categoria">
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/atv/kayo_au_200.png" alt="kayo_au_200">
                     <h4>Kayo AU 200</h4>
                     <h5>U$S 3490</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/atv/kayo_racing_bull_110.png" alt="kayo_racing_bull_110">
                     <h4>Kayo Racing Bull 110</h4>
                     <h5>U$S 2190</h5>
                 </div>
             </div>
-            <h3 id="usados">Usados</h3>
+            <h2 id="usados">Usados</h2>
             <div class="productos__categoria">
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/cf_moto_nk_400_blanca.png" alt="moto">
                     <h4>Cf Moto NK400</h4>
                     <h5>U$S 7990</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/cf_moto_nk_400_blanca.png" alt="moto">
                     <h4>Cf Moto NK400</h4>
                     <h5>U$S 7990</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/cf_moto_nk_400_blanca.png" alt="moto">
                     <h4>Cf Moto NK400</h4>
                     <h5>U$S 7990</h5>
                 </div>
-                <div class="productos__div">
+                <div class="productos__div__articulos d-fl">
                     <img src="../assets/img/productos/motos/cf_moto_nk_400_blanca.png" alt="moto">
                     <h4>Cf Moto NK400</h4>
                     <h5>U$S 7990</h5>

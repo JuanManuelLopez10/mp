@@ -1,4 +1,6 @@
+@import "../componentes/titulos";
 @import "../utilidades/variables";
+
 
 .index_video_portada{
     width: 100%;
@@ -30,39 +32,6 @@
       display: flex;
       flex-wrap: nowrap;
       overflow-x: scroll;
-      .articulo__ofertas_del_mes{
-        width: 130px;
-        background-color: $color-blanco;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 10px;
-        padding-bottom: 10px;
-        border-radius: 10px;
-        box-shadow: 0px 1px 2px 1px black;
-        transition: all 0.5s;
-        &:hover{
-          transform: scale(1.1, 1.1);
-          z-index: 1;
-        }
-        img{
-          width: 110px;
-          margin: 10px;
-        }
-        h3{
-          font-family: $letra-principal;
-          font-size: 1.2rem;
-        }
-        p{
-          font-family: $letra-principal;
-          font-size: 1rem;
-          span{
-            font-size: .8rem;
-            text-decoration: line-through 2px;
-          }
-        }
-      }
     }
   }
   #redes_index{
@@ -88,7 +57,6 @@
   }
   #galeria{
     background-color: $color-fondo;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 2px;
