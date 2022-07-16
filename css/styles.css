@@ -89,6 +89,7 @@ header {
   background-color: black;
   color: white;
   padding: 5px;
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 4fr 4fr 2fr 1fr;
@@ -349,10 +350,10 @@ header {
 .productos__div__ofertas_del_mes img, .productos__div__articulos img {
   width: 120px;
 }
-.productos__div__ofertas_del_mes h4, .productos__div__articulos h4 {
+.productos__div__ofertas_del_mes h3, .productos__div__articulos h3 {
   font-size: 1.3rem;
 }
-.productos__div__ofertas_del_mes h5, .productos__div__articulos h5 {
+.productos__div__ofertas_del_mes p, .productos__div__articulos p {
   font-size: 1.1rem;
 }
 .productos__div__ofertas_del_mes:hover, .productos__div__articulos:hover {
@@ -380,10 +381,10 @@ header {
   .productos__div__ofertas_del_mes img, .productos__div__articulos img {
     width: 98%;
   }
-  .productos__div__ofertas_del_mes h4, .productos__div__articulos h4 {
+  .productos__div__ofertas_del_mes h3, .productos__div__articulos h3 {
     font-size: 1.7rem;
   }
-  .productos__div__ofertas_del_mes h5, .productos__div__articulos h5 {
+  .productos__div__ofertas_del_mes p, .productos__div__articulos p {
     font-size: 1.3rem;
   }
 }
