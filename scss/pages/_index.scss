@@ -32,6 +32,7 @@
       display: flex;
       flex-wrap: nowrap;
       overflow-x: scroll;
+      overflow-y: hidden;
     }
   }
   #redes_index{
@@ -52,6 +53,7 @@
   }
   #proximamente .wallpaper{
     width: 100%;
+    height: 100%;
     padding: 0px;
     margin: 0px;
   }
@@ -59,11 +61,13 @@
     background-color: $color-fondo;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 2px;
     grid-template-areas: "img1 img1 img2 img3"
     "img1 img1 img4 img5";
+    margin: 0px;
+    padding: 0px;
     img{
       width: 100%;
+      height: 100%;
     }
     .img1{
       grid-area: img1; 
