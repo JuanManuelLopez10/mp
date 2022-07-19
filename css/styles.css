@@ -44,6 +44,9 @@ header {
 .nav li a {
   text-decoration: none;
 }
+.nav li a:hover {
+  color: red;
+}
 .nav__menu_secundario {
   font-size: 1rem;
 }
