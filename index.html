@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="./assets/img/logos/logo_motos_punta_favicon.png">
     <meta name="owner" content="Motos Punta">
     <meta name="author" content="Juan López">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,80 +17,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <a href="./index.html"><img class="nav__logo" src="./assets/img/logos/logo_motos_punta_index.webp" alt="Motos Punta"></a>
-            <ul class="nav__menu_secundario">
-                <li><a href="#footer">Empresa</a></li>
-                <li><a href="#marcas">Marcas</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+    <header class="p-0 m-0 container-fluid">
+        <nav class="nav row m-0 p-0 d-fl justify-content-center">
+            <a href="./index.html" class="col-10 col-sm-5 pt-1 pb-1"><img class="nav__logo col-12" src="./assets/img/logos/logo_motos_punta_index.webp" alt="Motos Punta"></a>
+            <ul class="d-flex nav__menu_secundario col list-unstyled align-items-center justify-content-around tex-secu">
+                <li><a class="color-blanco" href="#footer">Empresa</a></li>
+                <li><a class="color-blanco" href="#marcas">Marcas</a></li>
+                <li><a class="color-blanco" href="./pages/contacto.html">Contacto</a></li>
             </ul>
-            <ul class="nav__menu_primario">
-                <li><a href="./pages/motos.html">Motos</a></li>
-                <li><a href="./pages/cascos.html">Cascos</a></li>
-                <li><a href="./pages/indumentaria.html">Indumentaria</a></li>
-                <li><a href="./pages/accesorios.html">Accesorios</a></li>
-                <li><a href="../assets/catálogo.pdf" target="_blank">Catálogo</a></li>
+            <ul class="d-flex nav__menu_primario p-0 m-0 bg-black col-12 list-unstyled justify-content-around tex-prim">
+                <li><a class="color-blanco" href="./pages/motos.html">Motos</a></li>
+                <li><a class="color-blanco" href="./pages/cascos.html">Cascos</a></li>
+                <li><a class="color-blanco" href="./pages/indumentaria.html">Indumentaria</a></li>
+                <li><a class="color-blanco" href="./pages/accesorios.html">Accesorios</a></li>
+                <li><a class="color-blanco" href="../assets/catálogo.pdf" target="_blank">Catálogo</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="index_video_portada">
-            <picture>
-                <source  class="index_video_portada__video" media="(min-width: 768px)" srcset="./assets/img/wallpapers/cfmoto_mt650-large.png"/>
+        <section class="index_video_portada container-fluid m-0 p-0">
+            <picture >
+                <source  class="index_video_portada__video col-12" media="(min-width: 768px)" srcset="./assets/img/wallpapers/cfmoto_mt650-large.png"/>
                 
-                <img class="index_video_portada__video" src="./assets/img/wallpapers/cfmoto_mt650-small.png" alt="cfmoto_mt650">
+                <img class="index_video_portada__video col-12" src="./assets/img/wallpapers/cfmoto_mt650-small.png" alt="cfmoto_mt650">
             </picture>
         </section>
-        <section class="marcas">
-            <img class="marcas__logo" src="./assets/img/logos/agv_logo.png" alt="agv">
-            <img class="marcas__logo" src="./assets/img/logos/cf_moto_logo.jpg" alt="cf_moto">
-            <img class="marcas__logo" src="./assets/img/logos/honda_logo.png" alt="honda">
-            <img class="marcas__logo" src="./assets/img/logos/lifan.jpg" alt="lifan">
-            <img class="marcas__logo" src="./assets/img/logos/ls2.png" alt="ls2">
-            <img class="marcas__logo" src="./assets/img/logos/mt_logo.png" alt="mt">
-            <img class="marcas__logo" src="./assets/img/logos/suzuki.png" alt="suzuki">
+        <section class="marcas container-fluid d-flex p-1 flex-nowrap flex-lg-wrap justify-content-lg-around">
+            <img class="marcas__logo col-3 m-1 col-md-2" src="./assets/img/logos/agv_logo.png" alt="agv">
+            <img class="marcas__logo col-3 m-1 col-md-2" src="./assets/img/logos/cf_moto_logo.jpg" alt="cf_moto">
+            <img class="marcas__logo col-3 m-1 col-md-2" src="./assets/img/logos/honda_logo.png" alt="honda">
+            <img class="marcas__logo col-3 m-1 col-md-2" src="./assets/img/logos/lifan.jpg" alt="lifan">
+            <img class="marcas__logo col-3 m-1 col-md-2" src="./assets/img/logos/ls2.png" alt="ls2">
+            <img class="marcas__logo col-3 m-1 col-md-2" src="./assets/img/logos/mt_logo.png" alt="mt">
+            <img class="marcas__logo col-3 m-1 col-md-2" src="./assets/img/logos/suzuki.png" alt="suzuki">
         </section>
-        <section id="ofertas_del_mes">
-            <div id="ofertas_del_mes__div_titulo">
-                <h2>Ofertas del mes <span>Julio</span></h2>
+        <section id="ofertas_del_mes" class="container-fluid d-flex flex-column flex-md-row p-1 m-0">
+            <div id="ofertas_del_mes__div_titulo" class="row m-0 col-md-6 col-lg-4">
+                <h2 class="color-negro text-center tex-prim">Ofertas del mes <span class="color-secu">Julio</span></h2>
             </div>
-            <div id="ofertas_del_mes__div_articulos">
-                <div class="productos__div__ofertas_del_mes">
-                    <img src="./assets/img/productos/cascos/cerrados/stinger_maniac_rosado_1.png" alt="stinger_maniac_rosado">
-                    <h3>MT Stinger Maniac</h3>
-                    <p><span>$4000</span> $3500</p>
+            <div id="ofertas_del_mes__div_articulos" class="row m-0 d-flex p-2 justify-content-start flex-nowrap flex-lg-wrap justify-content-lg-around">
+                <div class="productos__div__ofertas_del_mes d-flex flex-column col-4 col-md-5 col-lg-2 bg-white m-1 p-0 justify-content-center align-items-center">
+                    <img class="col-10" src="./assets/img/productos/cascos/cerrados/stinger_maniac_rosado_1.png" alt="stinger_maniac_rosado">
+                    <h3 class="text-center">MT Stinger Maniac</h3>
+                    <p class="text-center"><span>$4000</span> $3500</p>
                 </div>
-                <div class="productos__div__ofertas_del_mes">
-                    <img src="./assets/img/productos/accesorios/puños_circuit_interlagos_azules.png" alt="puños_circuit_interlagos_azules">
-                    <h3>Circuit Interlagos</h3>
-                    <p><span>$600</span> $450</p>
+                <div class="productos__div__ofertas_del_mes d-flex flex-column col-4 col-md-5 col-lg-2 bg-white m-1 p-0 justify-content-center align-items-center">
+                    <img class="col-10" src="./assets/img/productos/accesorios/puños_circuit_interlagos_azules.png" alt="puños_circuit_interlagos_azules">
+                    <h3 class="text-center">Circuit Interlagos</h3>
+                    <p class="text-center"><span>$600</span> $450</p>
                 </div>
-                <div class="productos__div__ofertas_del_mes">
-                    <img src="./assets/img/productos/motos/cubs/vital_twist_125_roja.png" alt="vital_twist_125_roja">
-                    <h3>Vital Twist 125</h3>
-                    <p><span>U$S1350</span>  U$S1250</p>
+                <div class="productos__div__ofertas_del_mes d-flex flex-column col-4 col-md-5 col-lg-2 bg-white m-1 p-0 justify-content-center align-items-center">
+                    <img class="col-10" src="./assets/img/productos/motos/cubs/vital_twist_125_roja.png" alt="vital_twist_125_roja">
+                    <h3 class="text-center">Vital Twist 125</h3>
+                    <p class="text-center"><span>U$S1350</span>  U$S1250</p>
                 </div>
-                <div class="productos__div__ofertas_del_mes">
-                    <img src="./assets/img/productos/accesorios/puños_circuit_interlagos_azules.png" alt="puños_circuit_interlagos_azules">
-                    <h3>Circuit Interlagos</h3>
-                    <p><span>$600</span> $450</p>
+                <div class="productos__div__ofertas_del_mes d-flex flex-column col-4 col-md-5 col-lg-2 bg-white m-1 p-0 justify-content-center align-items-center">
+                    <img class="col-10" src="./assets/img/productos/accesorios/puños_circuit_interlagos_azules.png" alt="puños_circuit_interlagos_azules">
+                    <h3 class="text-center">Circuit Interlagos</h3>
+                    <p class="text-center"><span>$600</span> $450</p>
                 </div>
             </div>
         </section>
-        <section id="redes_index">
-            <a href="https://www.instagram.com/motospunta" target="_blank"><img class="wallpaper" src="./assets/img/wallpapers/instagram.png" alt="instagram"></a>
-            <a href="https://wa.me/59899673830" target="_blank"><img class="wallpaper" src="./assets/img/wallpapers/whatsapp.png" alt="whatsapp"></a>
-            <a href="https://www.facebook.com/MotosPuntaMaldonado/" target="_blank"><img class="wallpaper" src="./assets/img/wallpapers/facebook.png" alt="facebook"></a>
-            <a href="https://www.tiktok.com/@motospunta" target="_blank"><img class="wallpaper" src="./assets/img/wallpapers/tiktok.png" alt="whatsapp"></a>
+        <section id="redes_index" class="d-flex flex-wrap">
+            <a class="col-6 col-md-3" href="https://www.instagram.com/motospunta" target="_blank"><img class="wallpaper" src="./assets/img/wallpapers/instagram.png" alt="instagram"></a>
+            <a class="col-6 col-md-3" href="https://wa.me/59899673830" target="_blank"><img class="wallpaper" src="./assets/img/wallpapers/whatsapp.png" alt="whatsapp"></a>
+            <a class="col-6 col-md-3" href="https://www.facebook.com/MotosPuntaMaldonado/" target="_blank"><img class="wallpaper" src="./assets/img/wallpapers/facebook.png" alt="facebook"></a>
+            <a class="col-6 col-md-3" href="https://www.tiktok.com/@motospunta" target="_blank"><img class="wallpaper" src="./assets/img/wallpapers/tiktok.png" alt="whatsapp"></a>
         </section>
-        <section id="proximamente">
-            <picture>
-                <source class="wallpaper" media="(min-width: 768px)" srcset="./assets/img/wallpapers/mt_thunder_4-large.png"/>
+        <section class="index_video_portada container-fluid m-0 p-0">
+            <picture >
+                <source  class="index_video_portada__video col-12" media="(min-width: 768px)" srcset="./assets/img/wallpapers/mt_thunder_4-large.png"/>
                 
-                <img class="wallpaper" src="./assets/img/wallpapers/mt_thunder_4-small.png" alt="mt_thunder_4">
-            </picture>        </section>
-        <section id="galeria" class="d-gr">
+                <img class="index_video_portada__video col-12" src="./assets/img/wallpapers/mt_thunder_4-small.png" alt="mt_thunder_4">
+            </picture>
+        </section>
+        <section id="galeria">
             <picture class="img1">
                 <source media="(min-width: 768px)" srcset="./assets/img/galeria/blade_finishline_y_guantes_ixs-large.png">
                 <img src="./assets/img/galeria/blade_finishline_y_guantes_ixs-small.png" alt="blade_y_finishline_1">
@@ -112,32 +114,33 @@
             </picture>
         </section>
     </main>
-    <footer class="footer">
-        <ul class="footer__lista footer__soporte">
+    <footer class="footer container-fluid color-blanco bg-black d-flex justify-content-between flex-wrap id="footer">
+        <ul class="col-4 footer__lista footer__soporte">
             <li class="footer__lista__titulo">Soporte</li>
             <li><a href="./pages/contacto.html">Contacto</a></li>
             <li>Política de privacidad</li>
             <li>Política de cookies</li>
         </ul>
         <ul class="footer__lista footer__mp">
-            <li class="footer__lista__titulo">Motos Punta</li>
+            <li class="col-4 footer__lista__titulo">Motos Punta</li>
             <li><a href="./pages/empresa">Empresa</a></li>
             <li><a href="#marcas">Nuestras marcas</a></li>
             <li><a href="./assets/catálogo.pdf">Catálogo</a></li>
         </ul>
-        <ul class="footer__info">
+        <ul class="col-4 footer__info">
             <li><span>Horarios:</span> L - V 9hs a 13hs y 14:30hs a 19hs</li>
             <li><span>Email:</span><a href="mailto:motospunta@gmail.com"> motospunta@gmail.com</a></li>
             <li><span>Ubicación: </span><a href="https://www.google.com/maps/place/Motos+Punta+SRL/@-34.910819,-54.9523143,15z/data=!4m5!3m4!1s0x0:0x84f82e3d8e51484f!8m2!3d-34.910819!4d-54.9523143"> Arturo Santana y 19 de Abril</a></li>
             <li><span>Teléfono: </span>42245163 - 099 673 830</li>
         </ul>
-        <div class="footer__redes">
+        <div class="col-12 footer__redes d-flex justify-content-around col-12">
             <a href="https://instagram.com/motospunta" target="_blank"><i class="bi-instagram"></i></a>
             <a href="https://wa.me/59899673830" target="_blank"><i class="bi-whatsapp"></i></a>
             <a href="https://facebook.com/MotosPuntaMaldonado" target="_blank"><i class="bi-facebook"></i></a>
             <a href="https://www.tiktok.com/@motospunta" target="_blank"><i class="bi-tiktok"></i></a>    
         </div>
-        <p>2022 - Motos Punta. Todos los derechos reservados.</p>
+        <p class="text-center col-12">2022 - Motos Punta. Todos los derechos reservados.</p>
     </footer>
+    <script src="./js/bootstrap.js"></script>
 </body>
 </html>

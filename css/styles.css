@@ -9,92 +9,92 @@ html {
   overflow-x: hidden;
 }
 
-header {
-  background-color: grey;
-  width: 100%;
+.tex-prim {
+  font-family: "Bebas Neue", cursive;
 }
 
-.nav {
-  display: grid;
-  grid-template-rows: 2fr 30px 40px;
+.tex-secu {
+  font-family: "Mukta", sans-serif;
 }
-.nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-.nav li a {
-  text-decoration: none;
+
+.color-blanco {
   color: white;
 }
-.nav__menu_secundario {
-  font-family: "Mukta", sans-serif;
-  font-size: 0.9rem;
-  align-items: center;
-}
-.nav__logo {
-  width: 100%;
-}
-.nav__menu_primario {
-  font-family: "Bebas Neue", cursive;
-  background-color: black;
-  align-items: center;
+
+.color-secu {
+  color: red;
 }
 
-@media screen and (min-width: 480px) {
-  .nav {
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: 60px 40px;
-    grid-template-areas: "logo menu_secundario" "menu_primario menu_primario";
-  }
-  .nav__logo {
-    grid-area: logo;
-  }
+.color-fondo {
+  color: rgb(71, 71, 71);
+}
+
+.color-negro {
+  color: black;
+}
+
+.color-gris {
+  color: grey;
+}
+
+header {
+  background-color: grey;
+}
+
+.nav li a {
+  text-decoration: none;
+}
+.nav__menu_secundario {
+  font-size: 1rem;
+}
+.nav__menu_primario {
+  background-color: black;
+}
+
+@media screen and (min-width: 576px) {
   .nav__menu_secundario {
-    grid-area: menu_secundario;
+    font-size: 1.2rem;
   }
   .nav__menu_primario {
-    grid-area: menu_primario;
+    font-size: 1.4rem;
   }
 }
-@media screen and (min-width: 600px) {
-  .nav__logo {
-    height: 100%;
-    width: auto;
-  }
+@media screen and (min-width: 992px) {
   .nav__menu_secundario {
-    font-size: 1.1rem;
-  }
-  .nav__menu_primario {
-    font-size: 1.3rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .nav {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .nav {
-    grid-template-rows: 80px 50px;
-  }
-  .nav__menu_secundario {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .nav__menu_primario {
     font-size: 1.7rem;
   }
 }
-.footer {
-  background-color: black;
-  color: white;
-  padding: 5px;
-  padding-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4fr 4fr 2fr 1fr;
-  grid-template-areas: "soporte mp" "info info" "redes redes" "copyright copyright";
+.tex-prim {
+  font-family: "Bebas Neue", cursive;
 }
+
+.tex-secu {
+  font-family: "Mukta", sans-serif;
+}
+
+.color-blanco {
+  color: white;
+}
+
+.color-secu {
+  color: red;
+}
+
+.color-fondo {
+  color: rgb(71, 71, 71);
+}
+
+.color-negro {
+  color: black;
+}
+
+.color-gris {
+  color: grey;
+}
+
 .footer ul {
   list-style: none;
 }
@@ -102,14 +102,11 @@ header {
   text-decoration: none;
   color: white;
 }
-.footer__lista {
-  font-family: "Bebas Neue", cursive;
-}
 .footer__lista__titulo {
+  font-family: "Bebas Neue", cursive;
   font-size: 1.3rem;
 }
 .footer__info {
-  grid-area: info;
   font-family: "Mukta", sans-serif;
   font-size: 0.9rem;
 }
@@ -117,50 +114,29 @@ header {
   font-weight: 800;
 }
 .footer__redes {
-  grid-area: redes;
   font-size: 2rem;
-  display: flex;
-  justify-content: space-around;
 }
 .footer p {
-  grid-area: copyright;
   font-family: "Mukta", sans-serif;
   font-size: 0.8rem;
   text-align: center;
 }
 
 @media screen and (min-width: 480px) {
-  .footer {
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: 2fr 1fr 1fr;
-  }
   .footer__soporte {
-    grid-area: 1/1/2/2;
     font-size: 0.9rem;
   }
   .footer__mp {
-    grid-area: 1/2/2/3;
     font-size: 0.9rem;
   }
   .footer li {
     padding-top: 2px;
   }
-  .footer__info {
-    grid-area: 1/3/2/5;
-  }
   .footer__redes {
-    grid-area: 2/1/3/5;
     padding-top: 5px;
-  }
-  .footer p {
-    grid-area: 3/1/4/5;
   }
 }
 @media screen and (min-width: 768px) {
-  .footer {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 3fr 1fr;
-  }
   .footer__soporte {
     font-size: 1.2rem;
   }
@@ -171,26 +147,41 @@ header {
     font-size: 1.5rem;
   }
   .footer__info {
-    grid-area: 1/3/2/5;
     font-size: 1.1rem;
   }
-  .footer__redes {
-    grid-area: 1/5/2/6;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
 }
+.tex-prim {
+  font-family: "Bebas Neue", cursive;
+}
+
+.tex-secu {
+  font-family: "Mukta", sans-serif;
+}
+
+.color-blanco {
+  color: white;
+}
+
+.color-secu {
+  color: red;
+}
+
+.color-fondo {
+  color: rgb(71, 71, 71);
+}
+
+.color-negro {
+  color: black;
+}
+
+.color-gris {
+  color: grey;
+}
+
 .marcas {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
   overflow-x: scroll;
-  padding: 10px;
 }
 .marcas__logo {
-  width: 30vw;
-  margin: 0px 10px;
   filter: grayscale(1);
   transition: filter 0.5s;
 }
@@ -198,66 +189,88 @@ header {
   filter: grayscale(0);
 }
 
-@media screen and (min-width: 600px) {
-  .marcas__logo {
-    width: 20vw;
-  }
-}
 @media screen and (min-width: 1024px) {
   .marcas {
-    flex-wrap: wrap;
-    justify-content: center;
     overflow-x: hidden;
   }
-  .marcas__logo {
-    width: 15vw;
-  }
 }
+.tex-prim {
+  font-family: "Bebas Neue", cursive;
+}
+
+.tex-secu {
+  font-family: "Mukta", sans-serif;
+}
+
+.color-blanco {
+  color: white;
+}
+
+.color-secu {
+  color: red;
+}
+
+.color-fondo {
+  color: rgb(71, 71, 71);
+}
+
+.color-negro {
+  color: black;
+}
+
+.color-gris {
+  color: grey;
+}
+
 .titulo_de_pagina {
   font-family: "Bebas Neue", cursive;
   text-align: center;
   margin-top: 10px;
 }
 
-.index_video_portada {
-  width: 100%;
+.tex-prim {
+  font-family: "Bebas Neue", cursive;
 }
-.index_video_portada__video {
-  width: 100%;
+
+.tex-secu {
+  font-family: "Mukta", sans-serif;
+}
+
+.color-blanco {
+  color: white;
+}
+
+.color-secu {
+  color: red;
+}
+
+.color-fondo {
+  color: rgb(71, 71, 71);
+}
+
+.color-negro {
+  color: black;
+}
+
+.color-gris {
+  color: grey;
 }
 
 #ofertas_del_mes {
   background-color: rgb(71, 71, 71);
   display: flex;
-  flex-direction: column;
-  padding: 10px 0px;
-}
-#ofertas_del_mes__div_titulo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 #ofertas_del_mes__div_titulo h2 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 2.2rem;
-  text-align: center;
+  font-size: 2.5rem;
 }
 #ofertas_del_mes__div_titulo h2 span {
-  color: red;
   text-shadow: 2px 2px 2px black;
 }
 #ofertas_del_mes__div_articulos {
-  display: flex;
-  flex-wrap: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
 }
 
-#redes_index {
-  display: grid;
-  grid-template-columns: 50vw 50vw;
-  grid-template-rows: 1fr 1fr;
-}
 #redes_index a {
   transition: all 0.5s;
 }
@@ -278,6 +291,7 @@ header {
 }
 
 #galeria {
+  display: grid;
   background-color: rgb(71, 71, 71);
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -305,10 +319,6 @@ header {
   }
   #ofertas_del_mes h2 {
     font-size: 3rem;
-    text-align: center;
-  }
-  #redes_index {
-    display: flex;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -325,30 +335,39 @@ header {
     width: 12vw;
   }
 }
-.d-fl {
-  display: flex;
+.tex-prim {
+  font-family: "Bebas Neue", cursive;
 }
 
-.d-gr {
-  display: grid;
+.tex-secu {
+  font-family: "Mukta", sans-serif;
+}
+
+.color-blanco {
+  color: white;
+}
+
+.color-secu {
+  color: red;
+}
+
+.color-fondo {
+  color: rgb(71, 71, 71);
+}
+
+.color-negro {
+  color: black;
+}
+
+.color-gris {
+  color: grey;
 }
 
 .productos__div__ofertas_del_mes, .productos__div__articulos {
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: column;
-  padding: 5px;
-  margin: 10px;
-  width: 150px;
   border-radius: 20px;
-  background-color: white;
-  text-align: center;
   box-shadow: 0px 5px 7px black;
   font-family: "Bebas Neue", cursive;
   transition: all 0.5s;
-}
-.productos__div__ofertas_del_mes img, .productos__div__articulos img {
-  width: 120px;
 }
 .productos__div__ofertas_del_mes h3, .productos__div__articulos h3 {
   font-size: 1.3rem;
@@ -366,20 +385,9 @@ header {
 
 @media screen and (min-width: 600px) {
   .productos__div__ofertas_del_mes, .productos__div__articulos {
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: column;
-    padding: 5px;
-    margin: 10px;
-    width: 160px;
     border-radius: 20px;
-    background-color: white;
-    text-align: center;
     box-shadow: 0px 5px 7px black;
     font-family: "Bebas Neue", cursive;
-  }
-  .productos__div__ofertas_del_mes img, .productos__div__articulos img {
-    width: 98%;
   }
   .productos__div__ofertas_del_mes h3, .productos__div__articulos h3 {
     font-size: 1.7rem;
@@ -388,20 +396,12 @@ header {
     font-size: 1.3rem;
   }
 }
-@media screen and (min-width: 1024px) {
-  .productos__div__ofertas_del_mes, .productos__div__articulos {
-    width: 22%;
-  }
-}
 .categorias_opciones {
   background-color: rgb(71, 71, 71);
-  display: flex;
-  flex-wrap: nowrap;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 .categorias_opciones__img {
-  width: 30vw;
-  margin: 10px;
   border-radius: 10px;
 }
 
@@ -411,18 +411,12 @@ header {
 .productos h2 {
   font-family: "Bebas Neue", cursive;
   font-size: 1.8rem;
-  margin-left: 10px;
   color: white;
   font-weight: 200;
 }
 .productos__categoria {
-  display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: 90%;
 }
 
 @media screen and (min-width: 600px) {
@@ -433,11 +427,8 @@ header {
 @media screen and (min-width: 1024px) {
   .categorias_opciones {
     overflow-x: hidden;
-    flex-wrap: wrap;
-    justify-content: center;
   }
   .categorias_opciones__img {
-    width: 20vw;
     transition: all 0.5s;
   }
   .categorias_opciones__img:hover {
@@ -448,12 +439,36 @@ header {
     flex-wrap: wrap;
   }
 }
+.tex-prim {
+  font-family: "Bebas Neue", cursive;
+}
+
+.tex-secu {
+  font-family: "Mukta", sans-serif;
+}
+
+.color-blanco {
+  color: white;
+}
+
+.color-secu {
+  color: red;
+}
+
+.color-fondo {
+  color: rgb(71, 71, 71);
+}
+
+.color-negro {
+  color: black;
+}
+
+.color-gris {
+  color: grey;
+}
+
 #contacto_sect {
-  padding-top: 20px;
   background-color: rgb(71, 71, 71);
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  justify-content: center;
 }
 #contacto_sect h1 {
   font-family: "Bebas Neue", cursive;
@@ -461,58 +476,28 @@ header {
 }
 #contacto_sect .formulario {
   background-color: white;
-  width: 100%;
-  padding: 5px;
-  grid-area: 1/2/2/3;
 }
 #contacto_sect .formulario label {
-  display: block;
   font-family: "Bebas Neue", cursive;
   font-size: 1.3rem;
 }
-#contacto_sect .formulario .boton {
-  display: block;
-  margin: 2px;
-}
 
 .otros_contactos {
-  visibility: hidden;
-  height: 100%;
-  grid-area: 1/3/2/4;
   background-color: white;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-rows: 5% 20% 25% 40% 10%;
-  grid-template-areas: "vacio" "redes" "llamanos" "ubicacion";
 }
 .otros_contactos__redes {
-  grid-area: redes;
   font-family: "Bebas Neue", cursive;
   border-radius: 10px;
   box-shadow: 0px 2px 5px 0px black;
-  width: 60%;
-  text-align: center;
 }
 .otros_contactos__redes i {
   color: red;
   font-size: 1.5rem;
-  margin: 5px;
 }
 .otros_contactos__llamanos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 80%;
   border-radius: 10px;
   box-shadow: 0px 2px 5px 0px black;
-  grid-area: llamanos;
   font-family: "Bebas Neue", cursive;
-  text-align: end;
-  justify-self: end;
-  margin-right: 5px;
 }
 .otros_contactos__llamanos h2 {
   font-size: 1.2rem;
@@ -527,24 +512,13 @@ header {
 }
 .otros_contactos__ubicacion {
   border-radius: 10px;
-  width: 90%;
   box-shadow: 0px 2px 5px 0px black;
-  grid-area: ubicacion;
   font-family: "Bebas Neue", cursive;
-  padding-left: 5px;
-}
-.otros_contactos__ubicacion iframe {
-  width: 95%;
-  height: 80%;
 }
 
 @media screen and (min-width: 480px) {
   #contacto_sect {
-    padding-top: 20px;
     background-color: rgb(71, 71, 71);
-    display: grid;
-    grid-template-columns: 10% 45% 35% 10%;
-    justify-content: center;
   }
   .otros_contactos {
     visibility: visible;
@@ -566,12 +540,32 @@ header {
     font-size: 1.8rem;
   }
 }
-.d-fl {
-  display: flex;
+.tex-prim {
+  font-family: "Bebas Neue", cursive;
 }
 
-.d-gr {
-  display: grid;
+.tex-secu {
+  font-family: "Mukta", sans-serif;
+}
+
+.color-blanco {
+  color: white;
+}
+
+.color-secu {
+  color: red;
+}
+
+.color-fondo {
+  color: rgb(71, 71, 71);
+}
+
+.color-negro {
+  color: black;
+}
+
+.color-gris {
+  color: grey;
 }
 
 /*# sourceMappingURL=styles.css.map */

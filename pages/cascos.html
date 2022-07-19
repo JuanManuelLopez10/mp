@@ -9,230 +9,231 @@
     <link rel="shortcut icon" href="../assets/img/logos/logo_motos_punta_favicon.png">
     <meta name="author" content="Juan López">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta&display=swap" rel="stylesheet">
-</head>
+</head></head>
 <body>
-    <header>
-        <nav class="nav">
-            <a href="../index.html"><img class="nav__logo" src="../assets/img/logos/logo_motos_punta_index.webp" alt="Motos Punta"></a>
-            <ul class="nav__menu_secundario">
-                <li><a href="#footer">Empresa</a></li>
-                <li><a href="#marcas">Marcas</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+    <header class="p-0 m-0 container-fluid">
+        <nav class="nav row m-0 p-0 d-fl justify-content-center">
+            <a href="../index.html" class="col-10 col-sm-5 pt-1 pb-1"><img class="nav__logo col-12" src="../assets/img/logos/logo_motos_punta_index.webp" alt="Motos Punta"></a>
+            <ul class="d-flex nav__menu_secundario col list-unstyled align-items-center justify-content-around tex-secu">
+                <li><a class="color-blanco" href="#footer">Empresa</a></li>
+                <li><a class="color-blanco" href="#marcas">Marcas</a></li>
+                <li><a class="color-blanco" href="./contacto.html">Contacto</a></li>
             </ul>
-            <ul class="nav__menu_primario">
-                <li><a href="./motos.html">Motos</a></li>
-                <li><a href="./cascos.html">Cascos</a></li>
-                <li><a href="./indumentaria.html">Indumentaria</a></li>
-                <li><a href="./accesorios.html">Accesorios</a></li>
-                <li><a href="../assets/catálogo.pdf" target="_blank">Catálogo</a></li>
+            <ul class="d-flex nav__menu_primario p-0 m-0 bg-black col-12 list-unstyled justify-content-around tex-prim">
+                <li><a class="color-blanco" href="./motos.html">Motos</a></li>
+                <li><a class="color-blanco" href="./cascos.html">Cascos</a></li>
+                <li><a class="color-blanco" href="./indumentaria.html">Indumentaria</a></li>
+                <li><a class="color-blanco" href="./accesorios.html">Accesorios</a></li>
+                <li><a class="color-blanco" href="../assets/catálogo.pdf" target="_blank">Catálogo</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1 class="titulo_de_pagina">Cascos</h1>
-        <section class="marcas">
-            <img class="marcas__logo" src="../assets/img/logos/agv_logo.png" alt="agv">
-            <img class="marcas__logo" src="../assets/img/logos/ls2.png" alt="ls2">
-            <img class="marcas__logo" src="../assets/img/logos/mt_logo.png" alt="mt">
-            <img class="marcas__logo" src="../assets/img/logos/hawk.png" alt="hawk">
-            <img class="marcas__logo" src="../assets/img/logos/hjc.jpg" alt="hjc">
+        <section class="marcas container-fluid d-flex p-1 flex-nowrap flex-lg-wrap justify-content-md-around">
+            <img class="marcas__logo col-3 m-1 col-md-2" src="../assets/img/logos/agv_logo.png" alt="agv_logo">
+            <img class="marcas__logo col-3 m-1 col-md-2" src="../assets/img/logos/ls2.png" alt="ls2">
+            <img class="marcas__logo col-3 m-1 col-md-2" src="../assets/img/logos/mt_logo.png" alt="mt_logo">
+            <img class="marcas__logo col-3 m-1 col-md-2" src="../assets/img/logos/hawk.png" alt="hawk">
+            <img class="marcas__logo col-3 m-1 col-md-2" src="../assets/img/logos/hjc.jpg" alt="hjc">
         </section>
-        <section class="categorias_opciones">
-            <a href="#abiertos">
+        <section class="categorias_opciones container-fluid d-flex flex-nowrap p-1 m-0 flex-lg-wrap justify-content-lg-around">
+            <a class="col-4 col-sm-3 col-lg-2 m-1" href="#abiertos">
                 <picture>
-                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/abiertos-large.jpg">
-                    <img  class="categorias_opciones__img" src="../assets/img/caract/abiertos-small.jpg" alt="abiertos">
+                    <source  class="col-12 categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/abiertos-large.jpg">
+                    <img  class="col-12 categorias_opciones__img" src="../assets/img/caract/abiertos-small.jpg" alt="abiertos">
                 </picture>
             </a>
-            <a href="#cerrados">
+            <a class="col-4 col-sm-3 col-lg-2 m-1" href="#cerrados">
                 <picture>
-                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/cerrados-large.jpg">
-                    <img  class="categorias_opciones__img" src="../assets/img/caract/cerrados-small.jpg" alt="cerrados">
+                    <source  class="col-12 categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/cerrados-large.jpg">
+                    <img  class="col-12 categorias_opciones__img" src="../assets/img/caract/cerrados-small.jpg" alt="cerrados">
                 </picture>
             </a>
-            <a href="#trial">
+            <a class="col-4 col-sm-3 col-lg-2 m-1" href="#trial">
                 <picture>
-                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/trial-large.jpg">
-                    <img  class="categorias_opciones__img" src="../assets/img/caract/trial-small.jpg" alt="trial">
+                    <source  class="col-12 categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/trial-large.jpg">
+                    <img  class="col-12 categorias_opciones__img" src="../assets/img/caract/trial-small.jpg" alt="trial">
                 </picture>
             </a>
-            <a href="#rebatibles">
+            <a class="col-4 col-sm-3 col-lg-2 m-1" href="#rebatibles">
                 <picture>
-                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/rebatibles-large.jpg">
-                    <img  class="categorias_opciones__img" src="../assets/img/caract/rebatibles-small.jpg" alt="rebatibles">
+                    <source  class="col-12 categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/rebatibles-large.jpg">
+                    <img  class="col-12 categorias_opciones__img" src="../assets/img/caract/rebatibles-small.jpg" alt="rebatibles">
                 </picture>
             </a>
-            <a href="#off_road">
+            <a class="col-4 col-sm-3 col-lg-2 m-1" href="#off_road">
                 <picture>
-                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/off-road-large.jpg">
-                    <img  class="categorias_opciones__img" src="../assets/img/caract/off-road-small.jpg" alt="off-road">
+                    <source  class="col-12 categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/off-road-large.jpg">
+                    <img  class="col-12 categorias_opciones__img" src="../assets/img/caract/off-road-small.jpg" alt="off-road">
                 </picture>
             </a>
-            <a href="#niños">
+            <a class="col-4 col-sm-3 col-lg-2 m-1" href="#niños">
                 <picture>
-                    <source  class="categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/niños-large.jpg">
-                    <img  class="categorias_opciones__img" src="../assets/img/caract/niños-small.jpg" alt="niños">
+                    <source  class="col-12 categorias_opciones__img" media="(min-width: 768px)" srcset="../assets/img/caract/niños-large.jpg">
+                    <img  class="col-12 categorias_opciones__img" src="../assets/img/caract/niños-small.jpg" alt="niños">
                 </picture>
             </a>
         </section>
-        <section class="productos">
+        <section class="productos container-fluid">
             <h2 id="abiertos">Abiertos</h2>
-            <div class="productos__categoria">
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/abiertos/hawk_721_rosado.png" alt="hawk_721_rosado">
+            <div class="productos__categoria row d-flex flex-nowrap p-1 m-0 flex-lg-wrap justify-content-lg-around">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/abiertos/hawk_721_rosado.png" alt="hawk_721_rosado">
                     <h3>Hawk 721</h3>
                     <p>$ 2990</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/abiertos/mt_le_mans_cafe_racer_rojo.png" alt="mt_le_mans_cafe_racer_rojo">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/abiertos/mt_le_mans_cafe_racer_rojo.png" alt="mt_le_mans_cafe_racer_rojo">
                     <h3>MT Le Mans Café racer</h3>
                     <p>U$S 125</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/abiertos/mt_thunder_jet_bow.png" alt="mt_thunder_jet_bow">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/abiertos/mt_thunder_jet_bow.png" alt="mt_thunder_jet_bow">
                     <h3>MT Thunder Jet Bow</h3>
                     <p>U$S 115</p>
                 </div>
             </div>
             <h2 id="cerrados">Cerrados</h2>
-            <div class="productos__categoria">
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/cerrados/agv_k1_mugello_2015.png" alt="agv_k1_mugello_2015">
+            <div class="productos__categoria row d-flex flex-nowrap p-1 m-0 flex-lg-wrap justify-content-lg-around">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/cerrados/agv_k1_mugello_2015.png" alt="agv_k1_mugello_2015">
                     <h3>AGV K1 Mugello 2015</h3>
                     <p>U$S 290</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/cerrados/mt_blade_trick_amarillo.png" alt="mt_blade_trick_amarillo">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/cerrados/mt_blade_trick_amarillo.png" alt="mt_blade_trick_amarillo">
                     <h3>MT Blade Trick</h3>
                     <p>U$S 154</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/cerrados/ls2_ff353_xrapid_rojo.png" alt="ls2_ff353_xrapid_rojo">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/cerrados/ls2_ff353_xrapid_rojo.png" alt="ls2_ff353_xrapid_rojo">
                     <h3>LS2 FF353 Xrapid</h3>
                     <p>U$S 110</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/cerrados/hawk_rs15_negro.png" alt="hawk_rs15_negro">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/cerrados/hawk_rs15_negro.png" alt="hawk_rs15_negro">
                     <h3>Hawk RS15</h3>
                     <p>$ 2990</p>
                 </div>
             </div>
             <h2 id="trial">Trial</h2>
-            <div class="productos__categoria">
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/trial/mt_district_post_rojo.png" alt="mt_district_post_rojo">
+            <div class="productos__categoria row d-flex flex-nowrap p-1 m-0 flex-lg-wrap justify-content-lg-around">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/trial/mt_district_post_rojo.png" alt="mt_district_post_rojo">
                     <h3>MT District Rojo</h3>
                     <p>U$S 100</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/trial/mt_streetfighter_naranja.png" alt="mt_streetfighter_naranja">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/trial/mt_streetfighter_naranja.png" alt="mt_streetfighter_naranja">
                     <h3>MT Streetfighter Naranja</h3>
                     <p>U$S 159</p>
                 </div>
             </div>
-            <h3 id="rebatibles">Rebatibles</h3>
-            <div class="productos__categoria">
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/rebatibles/ls2_scope.png" alt="ls2_scope">
+            <h2 id="rebatibles">Rebatibles</h2>
+            <div class="productos__categoria row d-flex flex-nowrap p-1 m-0 flex-lg-wrap justify-content-lg-around">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/rebatibles/ls2_scope.png" alt="ls2_scope">
                     <h3>LS2 Scope</h3>
                     <p>U$S 215</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/rebatibles/agv_compact_st.png" alt="agv_compact_st">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/rebatibles/agv_compact_st.png" alt="agv_compact_st">
                     <h3>AGV Compact ST</h3>
                     <p>U$S 390</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/rebatibles/mt_atom.png" alt="mt_atom">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/rebatibles/mt_atom.png" alt="mt_atom">
                     <h3>MT Atom</h3>
                     <p>U$S 189</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/rebatibles/hawk_rs5.png" alt="hawk_rs5">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/rebatibles/hawk_rs5.png" alt="hawk_rs5">
                     <h3>Hawk RS5</h3>
                     <p>$ 3300</p>
                 </div>
             </div>
-            <h3 id="off_road">Off Road</h3>
-            <div class="productos__categoria">
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/off_road/mt_falcon_negro.png" alt="mt_falcon_negro">
+            <h2 id="off_road">Off Road</h2>
+            <div class="productos__categoria row d-flex flex-nowrap p-1 m-0 flex-lg-wrap justify-content-lg-around">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/off_road/mt_falcon_negro.png" alt="mt_falcon_negro">
                     <h3>MT Falcon</h3>
                     <p>U$S 135</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/off_road/hawk_rs7_blanco.png" alt="hawk_rs7_blanco">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/off_road/hawk_rs7_blanco.png" alt="hawk_rs7_blanco">
                     <h3>Hawk RS7</h3>
                     <p>$ 2990</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/off_road/hjc_cs-mx.png" alt="hjc_cs-mx">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/off_road/hjc_cs-mx.png" alt="hjc_cs-mx">
                     <h3>HJC CS-MX</h3>
                     <p>U$S 119</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/off_road/ls2_fast_evo_roar.png" alt="ls2_fast_evo_roar">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/off_road/ls2_fast_evo_roar.png" alt="ls2_fast_evo_roar">
                     <h3>LS2 Fast Evo Roar</h3>
                     <p>U$S 215</p>
                 </div>
             </div>
-            <h3 id="niños">Niños</h3>
-            <div class="productos__categoria">
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/niños/hawk_niño_cap.png" alt="hawk_niño_cap">
+            <h2 id="niños">Niños</h2>
+            <div class="productos__categoria row d-flex flex-nowrap p-1 m-0 flex-lg-wrap justify-content-lg-around">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/niños/hawk_niño_cap.png" alt="hawk_niño_cap">
                     <h3>Hawk RS Junior</h3>
                     <p>$ 2190</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/niños/mt_thunder_niño.png" alt="mt_thunder_niño">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/niños/mt_thunder_niño.png" alt="mt_thunder_niño">
                     <h3>MT Thunder Kid</h3>
                     <p>U$S 100</p>
                 </div>
             </div>
-            <h3 id="repuestos">Repuestos</h3>
-            <div class="productos__categoria">
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/repuestos/visores.png" alt="visores">
+            <h2 id="repuestos">Repuestos</h2>
+            <div class="productos__categoria row d-flex flex-nowrap p-1 m-0 flex-lg-wrap justify-content-lg-around">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/repuestos/visores.png" alt="visores">
                     <h3>Visores</h3>
                     <p>$ 1300</p>
                 </div>
-                <div class="productos__div__articulos">
-                    <img src="../assets/img/productos/cascos/repuestos/pinlock.png" alt="pinlock">
+                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                    <img class="col-11" src="../assets/img/productos/cascos/repuestos/pinlock.png" alt="pinlock">
                     <h3>Pinlocks</h3>
                     <p>$ 1990</p>
                 </div>
         </section>
     </main>
-    <footer class="footer">
-        <ul class="footer__lista footer__soporte">
+    <footer class="footer container-fluid color-blanco bg-black d-flex justify-content-between flex-wrap id="footer">
+        <ul class="col-5 col-sm-4 footer__lista footer__soporte">
             <li class="footer__lista__titulo">Soporte</li>
-            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
             <li>Política de privacidad</li>
             <li>Política de cookies</li>
         </ul>
-        <ul class="footer__lista footer__mp">
-            <li class="footer__lista__titulo">Motos Punta</li>
-            <li><a href="">Empresa</a></li>
+        <ul class="col-6 col-sm-4 footer__lista footer__mp">
+            <li class=" footer__lista__titulo">Motos Punta</li>
+            <li><a href=".">Empresa</a></li>
             <li><a href="#marcas">Nuestras marcas</a></li>
-            <li><a href="../assets/catálogo.pdf">Catálogo</a></li>
+            <li><a href="./assets/catálogo.pdf">Catálogo</a></li>
         </ul>
-        <ul class="footer__info">
+        <ul class="col-12 col-sm-4 footer__info">
             <li><span>Horarios:</span> L - V 9hs a 13hs y 14:30hs a 19hs</li>
             <li><span>Email:</span><a href="mailto:motospunta@gmail.com"> motospunta@gmail.com</a></li>
             <li><span>Ubicación: </span><a href="https://www.google.com/maps/place/Motos+Punta+SRL/@-34.910819,-54.9523143,15z/data=!4m5!3m4!1s0x0:0x84f82e3d8e51484f!8m2!3d-34.910819!4d-54.9523143"> Arturo Santana y 19 de Abril</a></li>
             <li><span>Teléfono: </span>42245163 - 099 673 830</li>
         </ul>
-        <div class="footer__redes">
+        <div class="col-12 footer__redes d-flex justify-content-around col-12">
             <a href="https://instagram.com/motospunta" target="_blank"><i class="bi-instagram"></i></a>
             <a href="https://wa.me/59899673830" target="_blank"><i class="bi-whatsapp"></i></a>
             <a href="https://facebook.com/MotosPuntaMaldonado" target="_blank"><i class="bi-facebook"></i></a>
             <a href="https://www.tiktok.com/@motospunta" target="_blank"><i class="bi-tiktok"></i></a>    
         </div>
-        <p>2022 - Motos Punta. Todos los derechos reservados.</p>
+        <p class="text-center col-12">2022 - Motos Punta. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

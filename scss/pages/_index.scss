@@ -1,44 +1,23 @@
 @import "../componentes/titulos";
 @import "../utilidades/variables";
 
-
-.index_video_portada{
-    width: 100%;
-    &__video{
-      width: 100%;
-    }
-  }
-  
   #ofertas_del_mes{
     background-color: $color-fondo;
     display: flex;
-    flex-direction: column;
-    padding: 10px 0px;
     &__div_titulo{
-      width: 100%;
-      display: flex;
-      justify-content: center;
       h2{
-        font-family: $letra-principal;
-        font-size: 2.2rem;
-        text-align: center;
+        font-size: 2.5rem;
         span{
-          color: $color-secundario;
           text-shadow: 2px 2px 2px $color-negro;
         }
       }
     }
     &__div_articulos{
-      display: flex;
-      flex-wrap: nowrap;
       overflow-x: scroll;
       overflow-y: hidden;
     }
   }
   #redes_index{
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: 1fr 1fr;
     a{
       transition: all 0.5s;
       &:hover{
@@ -58,6 +37,7 @@
     margin: 0px;
   }
   #galeria{
+    display: grid;
     background-color: $color-fondo;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -84,11 +64,7 @@
       }
       h2{
         font-size: 3rem;
-        text-align: center;
       }
-    }
-    #redes_index{
-      display: flex;
     }
   }
   @media screen and (min-width: 1024px)  {

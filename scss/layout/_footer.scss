@@ -1,17 +1,6 @@
 @import "../utilidades/variables";
 
 .footer{
-    background-color: $color-negro;
-    color: $color-blanco;
-    padding: 5px;
-    padding-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 4fr 4fr 2fr 1fr;
-    grid-template-areas: "soporte mp"
-    "info info"
-    "redes redes"
-    "copyright copyright";
     ul{
       list-style: none;
     }
@@ -19,14 +8,11 @@
       text-decoration: none;
       color: $color-blanco;
     }
-    &__lista{
+    &__lista__titulo{
       font-family: $letra-principal;
-      &__titulo{
         font-size: 1.3rem;
-      }
     }
     &__info{
-      grid-area: info;
       font-family: $letra-secundaria;
       font-size: 0.9rem;
     }
@@ -34,13 +20,9 @@
       font-weight: 800;
     }
     &__redes{
-      grid-area: redes;
       font-size: 2rem;
-      display: flex;
-      justify-content: space-around;
     }
     p{
-      grid-area: copyright;
       font-family: $letra-secundaria;
       font-size: .8rem;
       text-align: center;
@@ -48,35 +30,22 @@
   }
   @media screen and (min-width: 480px) {
     .footer{
-      grid-template-columns: 1fr 1fr 2fr;
-      grid-template-rows: 2fr 1fr 1fr;
       &__soporte{
-        grid-area: 1 / 1 / 2 / 2;
         font-size: .9rem;
       }
       &__mp{
-        grid-area: 1 / 2 / 2 / 3;
         font-size: .9rem;
       }
       li{
         padding-top: 2px;
       }
-      &__info{
-        grid-area: 1 / 3 / 2 / 5;
-      }
       &__redes{
-        grid-area: 2 / 1 / 3 / 5;
         padding-top: 5px;
-      }
-      p{
-        grid-area: 3 / 1 / 4 / 5;
       }
     }
   }
   @media screen and (min-width: 768px) {
     .footer{
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: 3fr 1fr;
       &__soporte{
         font-size: 1.2rem;
       }
@@ -87,14 +56,7 @@
         font-size: 1.5rem;
       }
       &__info{
-        grid-area: 1 / 3 / 2 / 5;
         font-size: 1.1rem;
-      }
-      &__redes{
-        grid-area: 1 / 5 / 2 / 6;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
       }
     }
   }

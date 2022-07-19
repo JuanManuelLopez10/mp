@@ -2,75 +2,32 @@
 
 header{
     background-color: $color-gris;
-    width: 100%;
   }
   .nav{
-    display: grid;
-    grid-template-rows: 2fr 30px 40px;
-    ul{
-      list-style: none;
-      display: flex;
-      justify-content: space-around;
-    }
     li a{
       text-decoration: none;
-      color: $color-blanco;
     }
     &__menu_secundario{
-      font-family: $letra-secundaria;
-      font-size: 0.9rem;
-      align-items: center;
-    }
-    &__logo{
-      width: 100%;
+      font-size: 1rem;
     }
     &__menu_primario{
-      font-family: $letra-principal;
       background-color: $color-negro;
-      align-items: center;
     }
   }
-  @media screen and (min-width: 480px) {
-    .nav{
-      grid-template-columns: 3fr 2fr;
-      grid-template-rows: 60px 40px;
-      grid-template-areas: "logo menu_secundario"
-      "menu_primario menu_primario";
-      &__logo{
-        grid-area: logo;
-      }
-      &__menu_secundario{
-          grid-area: menu_secundario;
-        }
-      &__menu_primario{
-        grid-area: menu_primario;
-      }
-    }  
-  }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   .nav{
-      &__logo{
-          height: 100%;
-          width: auto;
-        }
       &__menu_secundario{
-          font-size: 1.1rem;
+          font-size: 1.2rem;
         }
       &__menu_primario{
-          font-size: 1.3rem;
+          font-size: 1.4rem;
         }
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .nav{
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (min-width: 1024px)  {
-  .nav{
-    grid-template-rows: 80px 50px;
     &__menu_secundario{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
       }
     &__menu_primario{
         font-size: 1.7rem;

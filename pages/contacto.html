@@ -9,101 +9,102 @@
     <link rel="shortcut icon" href="../assets/img/logos/logo_motos_punta_favicon.png">
     <meta name="author" content="Juan López">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <a href="../index.html"><img class="nav__logo" src="../assets/img/logos/logo_motos_punta_index.webp" alt="Motos Punta"></a>
-            <ul class="nav__menu_secundario">
-                <li><a href="#footer">Empresa</a></li>
-                <li><a href="#marcas">Marcas</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+    <header class="p-0 m-0 container-fluid">
+        <nav class="nav row m-0 p-0 d-fl justify-content-center">
+            <a href="../index.html" class="col-10 col-sm-5 pt-1 pb-1"><img class="nav__logo col-12" src="../assets/img/logos/logo_motos_punta_index.webp" alt="Motos Punta"></a>
+            <ul class="d-flex nav__menu_secundario col list-unstyled align-items-center justify-content-around tex-secu">
+                <li><a class="color-blanco" href="#footer">Empresa</a></li>
+                <li><a class="color-blanco" href="#marcas">Marcas</a></li>
+                <li><a class="color-blanco" href="./contacto.html">Contacto</a></li>
             </ul>
-            <ul class="nav__menu_primario">
-                <li><a href="./motos.html">Motos</a></li>
-                <li><a href="./cascos.html">Cascos</a></li>
-                <li><a href="./indumentaria.html">Indumentaria</a></li>
-                <li><a href="./accesorios.html">Accesorios</a></li>
-                <li><a href="../assets/catálogo.pdf" target="_blank">Catálogo</a></li>
+            <ul class="d-flex nav__menu_primario p-0 m-0 bg-black col-12 list-unstyled justify-content-around tex-prim">
+                <li><a class="color-blanco" href="./motos.html">Motos</a></li>
+                <li><a class="color-blanco" href="./cascos.html">Cascos</a></li>
+                <li><a class="color-blanco" href="./indumentaria.html">Indumentaria</a></li>
+                <li><a class="color-blanco" href="./accesorios.html">Accesorios</a></li>
+                <li><a class="color-blanco" href="../assets/catálogo.pdf" target="_blank">Catálogo</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="contacto_sect">
-            <div class="formulario">
-                <h1>Contacto</h1>
-                <form action="">
-                    <label for="nombres">Nombres*</label>
-                    <input type="text" name="nombres" id="nombres" placeholder="Escriba aquí">
-                    <label for="apellidos">Apellidos*</label>
-                    <input type="text" name="apellidos" id="apellidos" placeholder="Escriba aquí">
-                    <label for="email">Email*</label>
-                    <input type="email" name="email" id="email" placeholder="Ej:motospunta@gmail.com">
-                    <label for="number">Número de teléfono*</label>
-                    <input type="number" name="number" id="number" placeholder="099673830">
-                    <label for="motivo">Motivo de consulta</label>
-                    <select name="motivo" id="motivo">
+        <section id="contacto_sect" class="container-fluid d-flex flex-wrap p-0 m-0">
+            <div class="formulario d-flex flex-column align-items-center col-md-6 p-0 m-0 row col-12 col-md-6">
+                <h1 class="col-11 col-md-6 m-1">Contacto</h1>
+                <form action="" class="col-11 d-flex flex-wrap">
+                    <label class="col-5 m-1" for="nombres">Nombres*</label>
+                    <label class="col-5 m-1" for="apellidos">Apellidos*</label>
+                    <input class="col-5 m-1" type="text" name="nombres" id="nombres" placeholder="Escriba aquí">
+                    <input class="col-5 m-1" type="text" name="apellidos" id="apellidos" placeholder="Escriba aquí">
+                    <label class="col-5 m-1" for="email">Email*</label>
+                    <label class="col-5 m-1" for="number">Teléfono*</label>
+                    <input class="col-5 m-1" type="email" name="email" id="email" placeholder="Ej:motospunta@gmail.com">
+                    <input class="col-5 m-1" type="number" name="number" id="number" placeholder="099673830">
+                    <label class="col-10 m-1" for="motivo">Motivo de consulta</label>
+                    <select class="col-8 m-1" name="motivo" id="motivo">
                         <option value="consultar_credito">Créditos disponibles</option>
                         <option value="consultar_stock">Stock disponible de producto</option>
                         <option value="consultas_por_garantia">Solicitud de garantia</option>
                         <option value="producto_defectuoso">Producto defectuoso</option>
                         <option value="otro_motivo">Otro motivo</option>
                     </select>
-                    <label for="descripcion_consulta">Describa su consulta</label>
-                    <textarea name="descripcion_consulta" id="descripcion_consulta" cols="27" rows="10"></textarea>
-                    <input type="reset" class="boton">
-                    <input type="submit" class="boton">
+                    <label class="col-12" for="descripcion_consulta">Describa su consulta</label>
+                    <textarea class="col-10" name="descripcion_consulta" id="descripcion_consulta" cols="27" rows="10"></textarea>
+                    <input type="reset" class="boton col-4 m-1">
+                    <input type="submit" class="boton col-4 m-1">
                </form>
             </div>
-            <div class="otros_contactos">
-                <div class="otros_contactos__redes">
+            <div class="otros_contactos p-2 col-12 col-md-6 d-flex flex-wrap">
+                <div class="otros_contactos__redes col-5 p-1 m-2">
                     <h2 class="otros_contactos__subtitulo">Estamos conectados</h2>
                     <i class="bi-instagram"></i>
                     <i class="bi-facebook"></i>
                     <a href="https://wa.me/59899673830" target="_blank"><i class="bi-whatsapp"></i></a>
                 </div>
-                <div class="otros_contactos__llamanos">
+                <div class="otros_contactos__llamanos col-5 p-1 m-2">
                     <h2 class="otros_contactos_subtitulo">Contactá llamando</h2>
                     <p>42 245 163 <br>
                         (+598)  099 673 830</p>
                 </div>
-                <div class="otros_contactos__ubicacion">
+                <div class="otros_contactos__ubicacion col-11 p-1">
                     <h2 class="otros_contactos_subtitulo">Encontranos</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13087.303498946689!2d-54.9523143!3d-34.910819!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x84f82e3d8e51484f!2sMotos%20Punta%20SRL!5e0!3m2!1ses!2suy!4v1655054870938!5m2!1ses!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="col-11" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13087.303498946689!2d-54.9523143!3d-34.910819!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x84f82e3d8e51484f!2sMotos%20Punta%20SRL!5e0!3m2!1ses!2suy!4v1655054870938!5m2!1ses!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <ul class="footer__lista footer__soporte">
+    <footer class="footer container-fluid color-blanco bg-black d-flex justify-content-between flex-wrap id="footer">
+        <ul class="col-5 col-sm-4 footer__lista footer__soporte">
             <li class="footer__lista__titulo">Soporte</li>
-            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
             <li>Política de privacidad</li>
             <li>Política de cookies</li>
         </ul>
-        <ul class="footer__lista footer__mp">
-            <li class="footer__lista__titulo">Motos Punta</li>
-            <li><a href="">Empresa</a></li>
+        <ul class="col-6 col-sm-4 footer__lista footer__mp">
+            <li class=" footer__lista__titulo">Motos Punta</li>
+            <li><a href=".">Empresa</a></li>
             <li><a href="#marcas">Nuestras marcas</a></li>
-            <li><a href="../assets/catálogo.pdf">Catálogo</a></li>
+            <li><a href="./assets/catálogo.pdf">Catálogo</a></li>
         </ul>
-        <ul class="footer__info">
+        <ul class="col-12 col-sm-4 footer__info">
             <li><span>Horarios:</span> L - V 9hs a 13hs y 14:30hs a 19hs</li>
             <li><span>Email:</span><a href="mailto:motospunta@gmail.com"> motospunta@gmail.com</a></li>
             <li><span>Ubicación: </span><a href="https://www.google.com/maps/place/Motos+Punta+SRL/@-34.910819,-54.9523143,15z/data=!4m5!3m4!1s0x0:0x84f82e3d8e51484f!8m2!3d-34.910819!4d-54.9523143"> Arturo Santana y 19 de Abril</a></li>
             <li><span>Teléfono: </span>42245163 - 099 673 830</li>
         </ul>
-        <div class="footer__redes">
+        <div class="col-12 footer__redes d-flex justify-content-around col-12">
             <a href="https://instagram.com/motospunta" target="_blank"><i class="bi-instagram"></i></a>
             <a href="https://wa.me/59899673830" target="_blank"><i class="bi-whatsapp"></i></a>
             <a href="https://facebook.com/MotosPuntaMaldonado" target="_blank"><i class="bi-facebook"></i></a>
             <a href="https://www.tiktok.com/@motospunta" target="_blank"><i class="bi-tiktok"></i></a>    
         </div>
-        <p>2022 - Motos Punta. Todos los derechos reservados.</p>
+        <p class="text-center col-12">2022 - Motos Punta. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
