@@ -94,12 +94,44 @@
         </section>
         <section class="productos container-fluid">
             <h2 id="cubs">Cubs</h2>
+
             <div class="productos__categoria row d-flex flex-nowrap p-1 m-0 flex-lg-wrap justify-content-lg-start">
-                <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
+                <button type="button" class="productos__div__articulos m-2 bg-white flex-nowrap col-5 col-lg-2" data-bs-toggle="modal" data-bs-target="#exampleModalwave">
                     <img class="col-11" src="../assets/img/productos/motos/cubs/honda_wave_110_gris.png" alt="honda_wave_110_gris">
                     <h3>Honda Wave 110</h3>
                     <p>U$S 2490</p>
-                </div>
+                </button>
+                <div class="modal fade" id="exampleModalwave" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen-sm-down modal-lg">
+                      <div class="modal-content ">
+                        <div class="modal-header bg-black m-0">
+                            <h5 class="modal-title tex-prim color-secu">Honda Wave 110 S</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex flex-sm-row align-items-center tex-prim p-0">
+                            <img class="col-6 m-1" src="../assets/img/productos/motos/cubs/honda_wave_110_gris.png" alt="honda_wave_110_gris">
+                            <div class="modal-opciones d-flex flex-column col-12 align-items-center col-md-6">
+                                <div class="modal-colores col-10">
+                                    <h6 class="modal-subtitulo-colores">Colores disponibles:</h6>
+                                    <div class="modal-colores-op col-5 d-flex justify-content-around">
+                                        <i class="bi-circle-fill color-blanco"></i>
+                                    </div>
+                                </div>
+                                <h4 class=" modal-precio col-10">U$S 2490</h4>
+                                <div class="modal-caract col-10">
+                                    <p>-Garantía: 15 meses o 15.000km</p>
+                                    <p>-Llantas de aleación</p>
+                                    <p>-Freno de disco delantero</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                            <a href="https://wa.me/+5459899673830?text=Buenas,%20me%20interesa%20la%20moto%20Honda%20Wave%20110%20S" target="_blank" class="btn btn-consultar" role="button">Consultar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 <div class="productos__div__articulos m-2 bg-white flex-nowrap col-3 col-lg-2">
                     <img class="col-11" src="../assets/img/productos/motos/cubs/vital_twist_125_roja.png" alt="vital_twist_125_roja">
                     <h3>Vital Twist 125</h3>
