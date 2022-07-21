@@ -8,6 +8,7 @@ header{
       text-decoration: none;
       &:hover{
         color: $color-secundario;
+        text-shadow: 1px 1px 2px black;
       }
     }
     &__menu_secundario{

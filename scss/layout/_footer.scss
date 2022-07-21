@@ -4,6 +4,9 @@
     ul{
       list-style: none;
     }
+    li{
+      font-family: $letra-secundaria;
+    }
     a{
       text-decoration: none;
       color: $color-blanco;
@@ -28,6 +31,17 @@
       text-align: center;
     }
   }
+  $redes : (
+    instagram: rgb(255, 0, 140),
+    whatsapp: rgb(0, 196, 0),
+    facebook: rgb(31, 31, 252),
+  );
+@each $red, $color in $redes {
+  .bi-#{$red}:hover{
+    color: $color;
+  }
+}
+
   @media screen and (min-width: 480px) {
     .footer{
       &__soporte{

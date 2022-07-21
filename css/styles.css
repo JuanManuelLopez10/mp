@@ -46,6 +46,7 @@ header {
 }
 .nav li a:hover {
   color: red;
+  text-shadow: 1px 1px 2px black;
 }
 .nav__menu_secundario {
   font-size: 1rem;
@@ -101,6 +102,9 @@ header {
 .footer ul {
   list-style: none;
 }
+.footer li {
+  font-family: "Mukta", sans-serif;
+}
 .footer a {
   text-decoration: none;
   color: white;
@@ -123,6 +127,18 @@ header {
   font-family: "Mukta", sans-serif;
   font-size: 0.8rem;
   text-align: center;
+}
+
+.bi-instagram:hover {
+  color: rgb(255, 0, 140);
+}
+
+.bi-whatsapp:hover {
+  color: rgb(0, 196, 0);
+}
+
+.bi-facebook:hover {
+  color: rgb(31, 31, 252);
 }
 
 @media screen and (min-width: 480px) {
@@ -284,13 +300,6 @@ header {
 #redes_index .wallpaper {
   height: 100%;
   width: 100%;
-}
-
-#proximamente .wallpaper {
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
 }
 
 #galeria {
