@@ -45,6 +45,14 @@ html {
   color: blue;
 }
 
+.color-gris-claro {
+  color: rgb(126, 126, 126);
+}
+
+.color-gris-oscuro {
+  color: rgb(58, 58, 58);
+}
+
 header {
   background-color: grey;
 }
@@ -113,6 +121,14 @@ header {
 
 .color-azul {
   color: blue;
+}
+
+.color-gris-claro {
+  color: rgb(126, 126, 126);
+}
+
+.color-gris-oscuro {
+  color: rgb(58, 58, 58);
 }
 
 .footer ul {
@@ -221,6 +237,14 @@ header {
   color: blue;
 }
 
+.color-gris-claro {
+  color: rgb(126, 126, 126);
+}
+
+.color-gris-oscuro {
+  color: rgb(58, 58, 58);
+}
+
 .marcas {
   overflow-x: scroll;
 }
@@ -273,6 +297,14 @@ header {
   color: blue;
 }
 
+.color-gris-claro {
+  color: rgb(126, 126, 126);
+}
+
+.color-gris-oscuro {
+  color: rgb(58, 58, 58);
+}
+
 .titulo_de_pagina {
   font-family: "Bebas Neue", cursive;
   text-align: center;
@@ -315,6 +347,14 @@ header {
   color: blue;
 }
 
+.color-gris-claro {
+  color: rgb(126, 126, 126);
+}
+
+.color-gris-oscuro {
+  color: rgb(58, 58, 58);
+}
+
 .tex-prim {
   font-family: "Bebas Neue", cursive;
 }
@@ -349,6 +389,14 @@ header {
 
 .color-azul {
   color: blue;
+}
+
+.color-gris-claro {
+  color: rgb(126, 126, 126);
+}
+
+.color-gris-oscuro {
+  color: rgb(58, 58, 58);
 }
 
 .modal .btn-consultar {
@@ -505,6 +553,14 @@ header {
   color: blue;
 }
 
+.color-gris-claro {
+  color: rgb(126, 126, 126);
+}
+
+.color-gris-oscuro {
+  color: rgb(58, 58, 58);
+}
+
 .productos__div__ofertas_del_mes, .productos__div__articulos {
   border-radius: 20px;
   box-shadow: 0px 5px 7px black;
@@ -572,6 +628,14 @@ header {
 
 .color-azul {
   color: blue;
+}
+
+.color-gris-claro {
+  color: rgb(126, 126, 126);
+}
+
+.color-gris-oscuro {
+  color: rgb(58, 58, 58);
 }
 
 .modal .btn-consultar {
@@ -699,6 +763,14 @@ header {
   color: blue;
 }
 
+.color-gris-claro {
+  color: rgb(126, 126, 126);
+}
+
+.color-gris-oscuro {
+  color: rgb(58, 58, 58);
+}
+
 #contacto_sect {
   background-color: rgb(71, 71, 71);
 }
@@ -771,6 +843,10 @@ header {
   .otros_contactos__llamanos h2 {
     font-size: 1.8rem;
   }
+  .otros_contactos__llamanos a {
+    font-size: 1.5;
+    text-decoration: none;
+  }
 }
 .tex-prim {
   font-family: "Bebas Neue", cursive;
@@ -806,6 +882,14 @@ header {
 
 .color-azul {
   color: blue;
+}
+
+.color-gris-claro {
+  color: rgb(126, 126, 126);
+}
+
+.color-gris-oscuro {
+  color: rgb(58, 58, 58);
 }
 
 /*# sourceMappingURL=styles.css.map */
