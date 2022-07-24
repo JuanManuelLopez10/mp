@@ -53,6 +53,26 @@ html {
   color: rgb(58, 58, 58);
 }
 
+.color-rosado {
+  color: rgb(255, 0, 170);
+}
+
+.color-amarillo {
+  color: rgb(229, 255, 0);
+}
+
+.color-verde {
+  color: rgb(7, 201, 0);
+}
+
+.color-naranja {
+  color: orange;
+}
+
+.color-marron {
+  color: rgb(122, 68, 17);
+}
+
 header {
   background-color: grey;
 }
@@ -129,6 +149,26 @@ header {
 
 .color-gris-oscuro {
   color: rgb(58, 58, 58);
+}
+
+.color-rosado {
+  color: rgb(255, 0, 170);
+}
+
+.color-amarillo {
+  color: rgb(229, 255, 0);
+}
+
+.color-verde {
+  color: rgb(7, 201, 0);
+}
+
+.color-naranja {
+  color: orange;
+}
+
+.color-marron {
+  color: rgb(122, 68, 17);
 }
 
 .footer ul {
@@ -245,6 +285,26 @@ header {
   color: rgb(58, 58, 58);
 }
 
+.color-rosado {
+  color: rgb(255, 0, 170);
+}
+
+.color-amarillo {
+  color: rgb(229, 255, 0);
+}
+
+.color-verde {
+  color: rgb(7, 201, 0);
+}
+
+.color-naranja {
+  color: orange;
+}
+
+.color-marron {
+  color: rgb(122, 68, 17);
+}
+
 .marcas {
   overflow-x: scroll;
 }
@@ -305,6 +365,26 @@ header {
   color: rgb(58, 58, 58);
 }
 
+.color-rosado {
+  color: rgb(255, 0, 170);
+}
+
+.color-amarillo {
+  color: rgb(229, 255, 0);
+}
+
+.color-verde {
+  color: rgb(7, 201, 0);
+}
+
+.color-naranja {
+  color: orange;
+}
+
+.color-marron {
+  color: rgb(122, 68, 17);
+}
+
 .titulo_de_pagina {
   font-family: "Bebas Neue", cursive;
   text-align: center;
@@ -355,6 +435,26 @@ header {
   color: rgb(58, 58, 58);
 }
 
+.color-rosado {
+  color: rgb(255, 0, 170);
+}
+
+.color-amarillo {
+  color: rgb(229, 255, 0);
+}
+
+.color-verde {
+  color: rgb(7, 201, 0);
+}
+
+.color-naranja {
+  color: orange;
+}
+
+.color-marron {
+  color: rgb(122, 68, 17);
+}
+
 .tex-prim {
   font-family: "Bebas Neue", cursive;
 }
@@ -397,6 +497,26 @@ header {
 
 .color-gris-oscuro {
   color: rgb(58, 58, 58);
+}
+
+.color-rosado {
+  color: rgb(255, 0, 170);
+}
+
+.color-amarillo {
+  color: rgb(229, 255, 0);
+}
+
+.color-verde {
+  color: rgb(7, 201, 0);
+}
+
+.color-naranja {
+  color: orange;
+}
+
+.color-marron {
+  color: rgb(122, 68, 17);
 }
 
 .modal .btn-consultar {
@@ -561,6 +681,26 @@ header {
   color: rgb(58, 58, 58);
 }
 
+.color-rosado {
+  color: rgb(255, 0, 170);
+}
+
+.color-amarillo {
+  color: rgb(229, 255, 0);
+}
+
+.color-verde {
+  color: rgb(7, 201, 0);
+}
+
+.color-naranja {
+  color: orange;
+}
+
+.color-marron {
+  color: rgb(122, 68, 17);
+}
+
 .productos__div__ofertas_del_mes, .productos__div__articulos {
   border-radius: 20px;
   box-shadow: 0px 5px 7px black;
@@ -636,6 +776,26 @@ header {
 
 .color-gris-oscuro {
   color: rgb(58, 58, 58);
+}
+
+.color-rosado {
+  color: rgb(255, 0, 170);
+}
+
+.color-amarillo {
+  color: rgb(229, 255, 0);
+}
+
+.color-verde {
+  color: rgb(7, 201, 0);
+}
+
+.color-naranja {
+  color: orange;
+}
+
+.color-marron {
+  color: rgb(122, 68, 17);
 }
 
 .modal .btn-consultar {
@@ -771,6 +931,26 @@ header {
   color: rgb(58, 58, 58);
 }
 
+.color-rosado {
+  color: rgb(255, 0, 170);
+}
+
+.color-amarillo {
+  color: rgb(229, 255, 0);
+}
+
+.color-verde {
+  color: rgb(7, 201, 0);
+}
+
+.color-naranja {
+  color: orange;
+}
+
+.color-marron {
+  color: rgb(122, 68, 17);
+}
+
 #contacto_sect {
   background-color: rgb(71, 71, 71);
 }
@@ -890,6 +1070,26 @@ header {
 
 .color-gris-oscuro {
   color: rgb(58, 58, 58);
+}
+
+.color-rosado {
+  color: rgb(255, 0, 170);
+}
+
+.color-amarillo {
+  color: rgb(229, 255, 0);
+}
+
+.color-verde {
+  color: rgb(7, 201, 0);
+}
+
+.color-naranja {
+  color: orange;
+}
+
+.color-marron {
+  color: rgb(122, 68, 17);
 }
 
 /*# sourceMappingURL=styles.css.map */
